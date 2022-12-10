@@ -1,1 +1,1 @@
-# always-jiro-swift
+# オールウェイズ二郎をSwiftで再現したい
