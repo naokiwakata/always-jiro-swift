@@ -18,6 +18,7 @@
 		234F97512945ECEA0034CE58 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234F97502945ECEA0034CE58 /* Demo.storyboard */; };
 		234F97542945EE8E0034CE58 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234F97522945EE8E0034CE58 /* MyPage.storyboard */; };
 		234F975629460D790034CE58 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234F975529460D790034CE58 /* Map.storyboard */; };
+		234F975829460F410034CE58 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234F975729460F410034CE58 /* Timeline.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		234F97502945ECEA0034CE58 /* Demo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Demo.storyboard; sourceTree = "<group>"; };
 		234F97532945EE8E0034CE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AlwaysJiro/view/Base.lproj/MyPage.storyboard; sourceTree = "<group>"; };
 		234F975529460D790034CE58 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		234F975729460F410034CE58 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				234F97522945EE8E0034CE58 /* MyPage.storyboard */,
 				234F97502945ECEA0034CE58 /* Demo.storyboard */,
 				234F96AE29449D560034CE58 /* LaunchScreen.storyboard */,
+				234F975729460F410034CE58 /* Timeline.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				234F96AB29449D560034CE58 /* Main.storyboard in Resources */,
 				234F97512945ECEA0034CE58 /* Demo.storyboard in Resources */,
 				234F975629460D790034CE58 /* Map.storyboard in Resources */,
+				234F975829460F410034CE58 /* Timeline.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
