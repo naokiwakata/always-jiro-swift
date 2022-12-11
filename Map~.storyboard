@@ -50,7 +50,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="zcg-dz-mnI" kind="relationship" relationship="viewControllers" id="hPg-Gw-syU"/>
+                        <segue destination="Jr2-4w-IZ6" kind="relationship" relationship="viewControllers" id="hPg-Gw-syU"/>
                         <segue destination="JXx-RF-qW5" kind="relationship" relationship="viewControllers" id="BI6-6s-F2W"/>
                         <segue destination="Ue3-y8-u49" kind="relationship" relationship="viewControllers" id="B98-gD-Qxy"/>
                         <segue destination="Pi5-3T-yh5" kind="relationship" relationship="viewControllers" id="QLU-dk-onw"/>
@@ -59,6 +59,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJa-u9-3fg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-158" y="33"/>
+        </scene>
+        <!--マップ-->
+        <scene sceneID="f31-TQ-joA">
+            <objects>
+                <viewController id="Jr2-4w-IZ6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gxi-0i-Kks">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YRh-s9-JsU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="マップ" image="map" catalog="system" id="PYx-Mu-q8B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vTr-d2-qPK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="-861"/>
         </scene>
         <!--Demo-->
         <scene sceneID="xDY-el-qLA">
@@ -115,19 +131,10 @@
             </objects>
             <point key="canvasLocation" x="507" y="338"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="9TB-ZG-nRm">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Map" id="zcg-dz-mnI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="HLh-Ju-S6t"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b0q-1G-JOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="642" y="-861"/>
-        </scene>
     </scenes>
     <resources>
         <image name="calendar.day.timeline.right" catalog="system" width="128" height="91"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
