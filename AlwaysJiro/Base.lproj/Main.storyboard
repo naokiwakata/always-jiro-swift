@@ -11,14 +11,13 @@
         <!--マイページ-->
         <scene sceneID="1AM-to-85v">
             <objects>
-                <viewController id="Kpw-X1-eSM" sceneMemberID="viewController">
+                <viewController id="Kpw-X1-eSM" customClass="MyPageViewController" customModule="AlwaysJiro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sIe-ZA-lf0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Uw-qt-f1h">
-                                <rect key="frame" x="186" y="438" width="39" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Uw-qt-f1h">
+                                <rect key="frame" x="187.5" y="437.5" width="39" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,8 +25,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i0t-cl-DNl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Uw-qt-f1h" firstAttribute="centerX" secondItem="sIe-ZA-lf0" secondAttribute="centerX" id="Z7N-Ny-7k5"/>
+                            <constraint firstItem="3Uw-qt-f1h" firstAttribute="centerY" secondItem="sIe-ZA-lf0" secondAttribute="centerY" id="qqJ-qd-GxR"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="マイページ" image="person.fill" catalog="system" id="Owk-0Z-eWg"/>
+                    <connections>
+                        <outlet property="label" destination="3Uw-qt-f1h" id="a5V-xb-fSr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ekx-MO-QaG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,6 +14,7 @@
 		234F96AD29449D560034CE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234F96AC29449D560034CE58 /* Assets.xcassets */; };
 		234F96B029449D560034CE58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234F96AE29449D560034CE58 /* LaunchScreen.storyboard */; };
 		234F97372945C5D60034CE58 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F97362945C5D60034CE58 /* TimelineViewController.swift */; };
+		234F97392945CC9C0034CE58 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F97382945CC9C0034CE58 /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		234F96AF29449D560034CE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		234F96B129449D560034CE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		234F97362945C5D60034CE58 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		234F97382945CC9C0034CE58 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				234F96AE29449D560034CE58 /* LaunchScreen.storyboard */,
 				234F96B129449D560034CE58 /* Info.plist */,
 				234F97362945C5D60034CE58 /* TimelineViewController.swift */,
+				234F97382945CC9C0034CE58 /* MyPageViewController.swift */,
 			);
 			path = AlwaysJiro;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234F97392945CC9C0034CE58 /* MyPageViewController.swift in Sources */,
 				234F96A829449D560034CE58 /* ViewController.swift in Sources */,
 				234F97372945C5D60034CE58 /* TimelineViewController.swift in Sources */,
 				234F96A429449D560034CE58 /* AppDelegate.swift in Sources */,
