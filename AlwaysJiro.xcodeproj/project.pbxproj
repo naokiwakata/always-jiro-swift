@@ -60,17 +60,41 @@
 		234F96A229449D560034CE58 /* AlwaysJiro */ = {
 			isa = PBXGroup;
 			children = (
+				234F973C2945DE390034CE58 /* controller */,
+				234F973B2945DE330034CE58 /* view */,
+				234F973A2945DE250034CE58 /* model */,
 				234F96A329449D560034CE58 /* AppDelegate.swift */,
 				234F96A529449D560034CE58 /* SceneDelegate.swift */,
 				234F96A729449D560034CE58 /* ViewController.swift */,
-				234F96A929449D560034CE58 /* Main.storyboard */,
 				234F96AC29449D560034CE58 /* Assets.xcassets */,
-				234F96AE29449D560034CE58 /* LaunchScreen.storyboard */,
 				234F96B129449D560034CE58 /* Info.plist */,
+			);
+			path = AlwaysJiro;
+			sourceTree = "<group>";
+		};
+		234F973A2945DE250034CE58 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		234F973B2945DE330034CE58 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				234F96A929449D560034CE58 /* Main.storyboard */,
+				234F96AE29449D560034CE58 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		234F973C2945DE390034CE58 /* controller */ = {
+			isa = PBXGroup;
+			children = (
 				234F97362945C5D60034CE58 /* TimelineViewController.swift */,
 				234F97382945CC9C0034CE58 /* MyPageViewController.swift */,
 			);
-			path = AlwaysJiro;
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
