@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--マイページ-->
         <scene sceneID="1AM-to-85v">
             <objects>
                 <viewController id="Kpw-X1-eSM" sceneMemberID="viewController">
@@ -27,27 +27,42 @@
                         <viewLayoutGuide key="safeArea" id="i0t-cl-DNl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Owk-0Z-eWg"/>
+                    <tabBarItem key="tabBarItem" title="マイページ" image="person.fill" catalog="system" id="Owk-0Z-eWg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ekx-MO-QaG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1338" y="502"/>
+            <point key="canvasLocation" x="642" y="1165"/>
         </scene>
-        <!--Item-->
+        <!--タイムライン-->
         <scene sceneID="rOr-qT-b01">
             <objects>
-                <viewController id="uhN-ve-BsD" sceneMemberID="viewController">
+                <viewController id="uhN-ve-BsD" customClass="TimelineViewController" customModule="AlwaysJiro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4ig-ge-d9i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoR-MC-m17">
+                                <rect key="frame" x="186.5" y="438" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="D1a-Vh-KWp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zoR-MC-m17" firstAttribute="centerX" secondItem="4ig-ge-d9i" secondAttribute="centerX" id="Q0U-Xe-bL1"/>
+                            <constraint firstItem="zoR-MC-m17" firstAttribute="centerY" secondItem="4ig-ge-d9i" secondAttribute="centerY" id="fKG-94-hOt"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="gof-KG-7UD"/>
+                    <navigationItem key="navigationItem" title="タイムライン" id="6Bh-pi-6gV"/>
+                    <connections>
+                        <outlet property="label" destination="zoR-MC-m17" id="U6t-fQ-0CX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ub-hU-Dvj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="-177"/>
+            <point key="canvasLocation" x="1426.0869565217392" y="-196.20535714285714"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jld-Pg-G2V">
@@ -61,7 +76,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Jr2-4w-IZ6" kind="relationship" relationship="viewControllers" id="hPg-Gw-syU"/>
-                        <segue destination="uhN-ve-BsD" kind="relationship" relationship="viewControllers" id="BI6-6s-F2W"/>
+                        <segue destination="JXx-RF-qW5" kind="relationship" relationship="viewControllers" id="BI6-6s-F2W"/>
                         <segue destination="NlA-GC-u37" kind="relationship" relationship="viewControllers" id="3JI-op-hel"/>
                         <segue destination="Kpw-X1-eSM" kind="relationship" relationship="viewControllers" id="B98-gD-Qxy"/>
                     </connections>
@@ -70,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="-158" y="33"/>
         </scene>
-        <!--Item-->
+        <!--マップ-->
         <scene sceneID="f31-TQ-joA">
             <objects>
                 <viewController id="Jr2-4w-IZ6" sceneMemberID="viewController">
@@ -80,13 +95,13 @@
                         <viewLayoutGuide key="safeArea" id="YRh-s9-JsU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PYx-Mu-q8B"/>
+                    <tabBarItem key="tabBarItem" title="マップ" image="map" catalog="system" id="PYx-Mu-q8B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTr-d2-qPK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1338" y="-177"/>
+            <point key="canvasLocation" x="642" y="-861"/>
         </scene>
-        <!--Item-->
+        <!--ランキング-->
         <scene sceneID="bLt-8R-PQF">
             <objects>
                 <viewController id="NlA-GC-u37" sceneMemberID="viewController">
@@ -96,16 +111,58 @@
                         <viewLayoutGuide key="safeArea" id="oSx-4e-8OG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Vv9-I7-14C"/>
+                    <tabBarItem key="tabBarItem" title="ランキング" image="list.number" catalog="system" id="Vv9-I7-14C"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tS6-R1-4BI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="502"/>
+            <point key="canvasLocation" x="643" y="477"/>
+        </scene>
+        <!--メイン-->
+        <scene sceneID="0WG-U1-P2A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JXx-RF-qW5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="メイン" image="calendar.day.timeline.right" catalog="system" id="gof-KG-7UD">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="alM-TJ-ar2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uhN-ve-BsD" kind="relationship" relationship="rootViewController" id="aMv-4G-IYN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jL2-Xd-ttO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="-195"/>
         </scene>
     </scenes>
     <resources>
+        <image name="calendar.day.timeline.right" catalog="system" width="128" height="91"/>
+        <image name="list.number" catalog="system" width="128" height="97"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

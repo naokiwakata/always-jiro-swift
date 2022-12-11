@@ -11,7 +11,8 @@ class ViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // タブバーの色変更
+        UITabBar.appearance().tintColor = UIColor.orange
     }
 
 
