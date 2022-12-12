@@ -26,8 +26,9 @@ class TimelineTableViewCell: UITableViewCell {
     
     func setCell(user: User){
         self.name.text = user.displayName
-        let url = URL(string: "https://d1c4vk0uc4cx9g.cloudfront.net/uploads/2020/02/Apple-SteveJobs.jpg")!
-        Nuke.loadImage(with: url, into: self.userImage)
+        let url = URL(string:  user.photoURL) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")!
+
+        Nuke.loadImage(with: url , into: self.userImage)
     }
     
 }
