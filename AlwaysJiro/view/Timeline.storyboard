@@ -35,12 +35,20 @@
                                     <outlet property="delegate" destination="YmH-iV-El1" id="IdZ-WG-WYQ"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="eN5-LQ-9id">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OPp-rH-Jq8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eN5-LQ-9id" firstAttribute="centerX" secondItem="q8z-jX-ICu" secondAttribute="centerX" id="AVl-F9-Frn"/>
+                            <constraint firstItem="eN5-LQ-9id" firstAttribute="centerY" secondItem="q8z-jX-ICu" secondAttribute="centerY" id="hVU-xG-DSQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="タイムライン" id="2Tg-Zh-puB"/>
                     <connections>
+                        <outlet property="acitivityIndicator" destination="eN5-LQ-9id" id="zhi-fa-Q0b"/>
                         <outlet property="tableView" destination="EZV-HR-GXO" id="Q0C-36-wzk"/>
                     </connections>
                 </viewController>
