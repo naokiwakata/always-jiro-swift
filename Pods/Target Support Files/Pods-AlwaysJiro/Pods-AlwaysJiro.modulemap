@@ -1,0 +1,6 @@
+framework module Pods_AlwaysJiro {
+  umbrella header "Pods-AlwaysJiro-umbrella.h"
+
+  export *
+  module * { export * }
+}

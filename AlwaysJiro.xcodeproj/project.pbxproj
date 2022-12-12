@@ -35,10 +35,22 @@
 		234F97B529472BF20034CE58 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234F97B329472BF20034CE58 /* TimelineTableViewCell.xib */; };
 		234F97B8294732E30034CE58 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F97B6294732E30034CE58 /* SampleTableViewCell.swift */; };
 		234F97B9294732E30034CE58 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234F97B7294732E30034CE58 /* SampleTableViewCell.xib */; };
+		23DB5512294745A70070CD13 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 23DB5511294745A70070CD13 /* Nuke */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		23DB550F2947414A0070CD13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		234F96A029449D560034CE58 /* AlwaysJiro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysJiro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234F96A329449D560034CE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		234F96A529449D560034CE58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		234F96A729449D560034CE58 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +70,10 @@
 		234F97B329472BF20034CE58 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		234F97B6294732E30034CE58 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
 		234F97B7294732E30034CE58 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
+		23DB5516294746F50070CD13 /* AlwaysJiro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysJiro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		567681DA7E559245EEA2F98C /* Pods-AlwaysJiro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysJiro.debug.xcconfig"; path = "Target Support Files/Pods-AlwaysJiro/Pods-AlwaysJiro.debug.xcconfig"; sourceTree = "<group>"; };
+		84B7196081645A8D3B407F7F /* Pods_AlwaysJiro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlwaysJiro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF1E04617566D0921C3C928 /* Pods-AlwaysJiro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysJiro.release.xcconfig"; path = "Target Support Files/Pods-AlwaysJiro/Pods-AlwaysJiro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +84,7 @@
 				234F979E294619260034CE58 /* FirebaseAnalyticsSwift in Frameworks */,
 				234F979A294619260034CE58 /* FirebaseAnalytics in Frameworks */,
 				234F97AC294619260034CE58 /* FirebaseStorageCombine-Community in Frameworks */,
+				23DB5512294745A70070CD13 /* Nuke in Frameworks */,
 				234F97AA294619260034CE58 /* FirebaseStorage in Frameworks */,
 				234F979C294619260034CE58 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				234F97A0294619260034CE58 /* FirebaseAuth in Frameworks */,
@@ -85,16 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				234F96A229449D560034CE58 /* AlwaysJiro */,
-				234F96A129449D560034CE58 /* Products */,
+				49CC27C94865B799B6AB5C04 /* Pods */,
+				64058774A01C0A67EB9B11CF /* Frameworks */,
+				23DB5516294746F50070CD13 /* AlwaysJiro.app */,
 			);
-			sourceTree = "<group>";
-		};
-		234F96A129449D560034CE58 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				234F96A029449D560034CE58 /* AlwaysJiro.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		234F96A229449D560034CE58 /* AlwaysJiro */ = {
@@ -123,16 +134,12 @@
 		234F973B2945DE330034CE58 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				234F97BA294736A30034CE58 /* Timeline */,
 				234F975529460D790034CE58 /* Map.storyboard */,
 				234F96A929449D560034CE58 /* Main.storyboard */,
 				234F97522945EE8E0034CE58 /* MyPage.storyboard */,
 				234F97502945ECEA0034CE58 /* Rank.storyboard */,
 				234F96AE29449D560034CE58 /* LaunchScreen.storyboard */,
-				234F975729460F410034CE58 /* Timeline.storyboard */,
-				234F97B229472BF20034CE58 /* TimelineTableViewCell.swift */,
-				234F97B329472BF20034CE58 /* TimelineTableViewCell.xib */,
-				234F97B6294732E30034CE58 /* SampleTableViewCell.swift */,
-				234F97B7294732E30034CE58 /* SampleTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -147,6 +154,35 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
+		234F97BA294736A30034CE58 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				234F975729460F410034CE58 /* Timeline.storyboard */,
+				234F97B229472BF20034CE58 /* TimelineTableViewCell.swift */,
+				234F97B329472BF20034CE58 /* TimelineTableViewCell.xib */,
+				234F97B6294732E30034CE58 /* SampleTableViewCell.swift */,
+				234F97B7294732E30034CE58 /* SampleTableViewCell.xib */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		49CC27C94865B799B6AB5C04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				567681DA7E559245EEA2F98C /* Pods-AlwaysJiro.debug.xcconfig */,
+				AFF1E04617566D0921C3C928 /* Pods-AlwaysJiro.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		64058774A01C0A67EB9B11CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84B7196081645A8D3B407F7F /* Pods_AlwaysJiro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 234F96B429449D560034CE58 /* Build configuration list for PBXNativeTarget "AlwaysJiro" */;
 			buildPhases = (
+				E428B0A7C211BAE21421ACCB /* [CP] Check Pods Manifest.lock */,
 				234F969C29449D560034CE58 /* Sources */,
 				234F969D29449D560034CE58 /* Frameworks */,
 				234F969E29449D560034CE58 /* Resources */,
+				23DB550F2947414A0070CD13 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -174,9 +212,10 @@
 				234F97A7294619260034CE58 /* FirebaseFirestoreSwift */,
 				234F97A9294619260034CE58 /* FirebaseStorage */,
 				234F97AB294619260034CE58 /* FirebaseStorageCombine-Community */,
+				23DB5511294745A70070CD13 /* Nuke */,
 			);
 			productName = AlwaysJiro;
-			productReference = 234F96A029449D560034CE58 /* AlwaysJiro.app */;
+			productReference = 23DB5516294746F50070CD13 /* AlwaysJiro.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,8 +244,9 @@
 			mainGroup = 234F969729449D560034CE58;
 			packageReferences = (
 				234F9798294619260034CE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				23DB5510294745A70070CD13 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
-			productRefGroup = 234F96A129449D560034CE58 /* Products */;
+			productRefGroup = 234F969729449D560034CE58;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -234,6 +274,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E428B0A7C211BAE21421ACCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlwaysJiro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		234F969C29449D560034CE58 /* Sources */ = {
@@ -397,6 +462,7 @@
 		};
 		234F96B529449D560034CE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 567681DA7E559245EEA2F98C /* Pods-AlwaysJiro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -425,6 +491,7 @@
 		};
 		234F96B629449D560034CE58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF1E04617566D0921C3C928 /* Pods-AlwaysJiro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,6 +550,14 @@
 				kind = branch;
 			};
 		};
+		23DB5510294745A70070CD13 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -535,6 +610,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 234F9798294619260034CE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		23DB5511294745A70070CD13 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23DB5510294745A70070CD13 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import Nuke
 
 class TimelineTableViewCell: UITableViewCell {
 
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var userImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +26,8 @@ class TimelineTableViewCell: UITableViewCell {
     
     func setCell(user: User){
         self.name.text = user.displayName
+        let url = URL(string: "https://d1c4vk0uc4cx9g.cloudfront.net/uploads/2020/02/Apple-SteveJobs.jpg")!
+        Nuke.loadImage(with: url, into: self.userImage)
     }
     
 }
