@@ -1,19 +1,19 @@
 import UIKit
 import Firebase
 
-class TimelineViewController: UIViewController {
+class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var label: UILabel!
-    
+    @IBOutlet weak var tableView: UITableView!
+    //配列fruitsを設定
+    let fruits = ["apple", "orange", "melon", "banana", "pineapple"]
     var users: Array<User> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = "接続できてる？"
-
         Task.detached(){ [self] in
             await fetchUsers()
-            await print(users)
+            await self.tableView.reloadData()
         }
     }
     
@@ -28,4 +28,19 @@ class TimelineViewController: UIViewController {
             print("Error")
         }
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(users.count)
+        return users.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // セルを取得する
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TimelineCell", for: indexPath)
+        
+        // セルに表示する値を設定する
+        cell.textLabel!.text = users[indexPath.row].displayName
+        
+        return cell    }
+    
 }
