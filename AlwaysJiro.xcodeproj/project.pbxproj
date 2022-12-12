@@ -31,6 +31,10 @@
 		234F97AA294619260034CE58 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 234F97A9294619260034CE58 /* FirebaseStorage */; };
 		234F97AC294619260034CE58 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 234F97AB294619260034CE58 /* FirebaseStorageCombine-Community */; };
 		234F97B129461E930034CE58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F97B029461E930034CE58 /* User.swift */; };
+		234F97B429472BF20034CE58 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F97B229472BF20034CE58 /* TimelineTableViewCell.swift */; };
+		234F97B529472BF20034CE58 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234F97B329472BF20034CE58 /* TimelineTableViewCell.xib */; };
+		234F97B8294732E30034CE58 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F97B6294732E30034CE58 /* SampleTableViewCell.swift */; };
+		234F97B9294732E30034CE58 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234F97B7294732E30034CE58 /* SampleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		234F975729460F410034CE58 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
 		234F97962946184A0034CE58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		234F97B029461E930034CE58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		234F97B229472BF20034CE58 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		234F97B329472BF20034CE58 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
+		234F97B6294732E30034CE58 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
+		234F97B7294732E30034CE58 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,10 @@
 				234F97502945ECEA0034CE58 /* Rank.storyboard */,
 				234F96AE29449D560034CE58 /* LaunchScreen.storyboard */,
 				234F975729460F410034CE58 /* Timeline.storyboard */,
+				234F97B229472BF20034CE58 /* TimelineTableViewCell.swift */,
+				234F97B329472BF20034CE58 /* TimelineTableViewCell.xib */,
+				234F97B6294732E30034CE58 /* SampleTableViewCell.swift */,
+				234F97B7294732E30034CE58 /* SampleTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -209,12 +221,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				234F96B029449D560034CE58 /* LaunchScreen.storyboard in Resources */,
+				234F97B9294732E30034CE58 /* SampleTableViewCell.xib in Resources */,
 				234F97972946184A0034CE58 /* GoogleService-Info.plist in Resources */,
 				234F97542945EE8E0034CE58 /* MyPage.storyboard in Resources */,
 				234F96AD29449D560034CE58 /* Assets.xcassets in Resources */,
 				234F96AB29449D560034CE58 /* Main.storyboard in Resources */,
 				234F97512945ECEA0034CE58 /* Rank.storyboard in Resources */,
 				234F975629460D790034CE58 /* Map.storyboard in Resources */,
+				234F97B529472BF20034CE58 /* TimelineTableViewCell.xib in Resources */,
 				234F975829460F410034CE58 /* Timeline.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234F97B429472BF20034CE58 /* TimelineTableViewCell.swift in Sources */,
+				234F97B8294732E30034CE58 /* SampleTableViewCell.swift in Sources */,
 				234F97392945CC9C0034CE58 /* MyPageViewController.swift in Sources */,
 				234F96A829449D560034CE58 /* MainViewController.swift in Sources */,
 				234F97B129461E930034CE58 /* User.swift in Sources */,
