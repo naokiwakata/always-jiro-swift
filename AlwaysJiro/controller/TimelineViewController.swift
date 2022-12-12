@@ -5,8 +5,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var acitivityIndicator: UIActivityIndicatorView!
-    //配列fruitsを設定
-    let fruits = ["apple", "orange", "melon", "banana", "pineapple"]
+
     var users: Array<User> = []
     
     override func viewDidLoad() {
