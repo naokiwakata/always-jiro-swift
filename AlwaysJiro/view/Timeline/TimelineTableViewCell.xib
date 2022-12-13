@@ -9,32 +9,51 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="KGk-i7-Jjw" customClass="TimelineTableViewCell" customModule="AlwaysJiro" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="TimelineTableViewCell" customModule="AlwaysJiro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bp8-pw-Orn">
-                        <rect key="frame" x="30" y="15" width="50" height="50"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bp8-pw-Orn">
+                        <rect key="frame" x="8" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="WQN-qR-c1u"/>
+                            <constraint firstAttribute="width" constant="50" id="ytl-54-JEl"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsk-A9-Q9c">
-                        <rect key="frame" x="124" y="30" width="35" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsk-A9-Q9c">
+                        <rect key="frame" x="70" y="25.5" width="33" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿日時" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gef-nD-4mB">
+                        <rect key="frame" x="262.5" y="8" width="49.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="Gef-nD-4mB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="EMh-cK-CFi"/>
+                    <constraint firstItem="Bp8-pw-Orn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Eyi-gl-Ymw"/>
+                    <constraint firstItem="Bp8-pw-Orn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="JhQ-wC-tuT"/>
+                    <constraint firstAttribute="trailing" secondItem="Gef-nD-4mB" secondAttribute="trailing" constant="8" id="Qsy-0m-4f9"/>
+                    <constraint firstItem="Gsk-A9-Q9c" firstAttribute="leading" secondItem="Bp8-pw-Orn" secondAttribute="trailing" constant="12" id="V3b-Xj-6zV"/>
+                    <constraint firstAttribute="bottom" secondItem="Bp8-pw-Orn" secondAttribute="bottom" constant="10" id="lWp-4g-N6K"/>
+                    <constraint firstItem="Gsk-A9-Q9c" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nBj-WY-DSj"/>
+                    <constraint firstItem="Bp8-pw-Orn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="y4R-QN-iiW"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="name" destination="Gsk-A9-Q9c" id="Zn6-DW-7KY"/>
+                <outlet property="publishedAt" destination="Gef-nD-4mB" id="Sgk-lJ-Tb4"/>
                 <outlet property="userImage" destination="Bp8-pw-Orn" id="bLq-FC-rBo"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="79.352678571428569"/>
+            <point key="canvasLocation" x="137.68115942028987" y="53.236607142857139"/>
         </tableViewCell>
     </objects>
 </document>
