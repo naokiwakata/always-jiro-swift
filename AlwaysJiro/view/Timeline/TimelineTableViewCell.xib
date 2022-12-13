@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,36 +25,78 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsk-A9-Q9c">
-                        <rect key="frame" x="70" y="25.5" width="33" height="19.5"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <rect key="frame" x="70" y="14" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿日時" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gef-nD-4mB">
-                        <rect key="frame" x="262.5" y="8" width="49.5" height="14.5"/>
+                        <rect key="frame" x="262.5" y="12" width="49.5" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hXI-dl-g6S">
+                        <rect key="frame" x="68" y="39.5" width="22" height="20"/>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GtA-RC-4gD">
+                        <rect key="frame" x="92" y="39.5" width="22" height="20"/>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RHv-vN-T3A">
+                        <rect key="frame" x="164" y="38.5" width="22" height="21"/>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fLK-Zs-jVu">
+                        <rect key="frame" x="140" y="39.5" width="22" height="20"/>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1za-0g-ewv">
+                        <rect key="frame" x="116" y="39.5" width="22" height="20"/>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Gef-nD-4mB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="EMh-cK-CFi"/>
+                    <constraint firstItem="RHv-vN-T3A" firstAttribute="leading" secondItem="fLK-Zs-jVu" secondAttribute="trailing" constant="2" id="1uI-Rv-aLP"/>
+                    <constraint firstItem="RHv-vN-T3A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="5fn-Tr-NUw"/>
+                    <constraint firstAttribute="bottom" secondItem="hXI-dl-g6S" secondAttribute="bottom" constant="10" id="A2a-6Z-yII"/>
+                    <constraint firstAttribute="bottom" secondItem="RHv-vN-T3A" secondAttribute="bottom" constant="10" id="DEI-Gp-7c0"/>
+                    <constraint firstAttribute="bottom" secondItem="fLK-Zs-jVu" secondAttribute="bottom" constant="10" id="Dhu-7B-ZeG"/>
+                    <constraint firstItem="Gef-nD-4mB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="EMh-cK-CFi"/>
                     <constraint firstItem="Bp8-pw-Orn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Eyi-gl-Ymw"/>
+                    <constraint firstItem="Gsk-A9-Q9c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="Ict-ML-Yal"/>
                     <constraint firstItem="Bp8-pw-Orn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="JhQ-wC-tuT"/>
                     <constraint firstAttribute="trailing" secondItem="Gef-nD-4mB" secondAttribute="trailing" constant="8" id="Qsy-0m-4f9"/>
                     <constraint firstItem="Gsk-A9-Q9c" firstAttribute="leading" secondItem="Bp8-pw-Orn" secondAttribute="trailing" constant="12" id="V3b-Xj-6zV"/>
+                    <constraint firstItem="hXI-dl-g6S" firstAttribute="leading" secondItem="Bp8-pw-Orn" secondAttribute="trailing" constant="10" id="XdT-Mi-YwB"/>
+                    <constraint firstAttribute="bottom" secondItem="GtA-RC-4gD" secondAttribute="bottom" constant="10" id="hwE-ck-sfH"/>
                     <constraint firstAttribute="bottom" secondItem="Bp8-pw-Orn" secondAttribute="bottom" constant="10" id="lWp-4g-N6K"/>
-                    <constraint firstItem="Gsk-A9-Q9c" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nBj-WY-DSj"/>
+                    <constraint firstItem="fLK-Zs-jVu" firstAttribute="leading" secondItem="1za-0g-ewv" secondAttribute="trailing" constant="2" id="rZm-fJ-NHG"/>
+                    <constraint firstItem="GtA-RC-4gD" firstAttribute="leading" secondItem="hXI-dl-g6S" secondAttribute="trailing" constant="2" id="tRz-q4-aT0"/>
+                    <constraint firstAttribute="bottom" secondItem="1za-0g-ewv" secondAttribute="bottom" constant="10" id="wl3-l6-QTg"/>
                     <constraint firstItem="Bp8-pw-Orn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="y4R-QN-iiW"/>
+                    <constraint firstItem="1za-0g-ewv" firstAttribute="leading" secondItem="GtA-RC-4gD" secondAttribute="trailing" constant="2" id="zg0-fI-ZKz"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="name" destination="Gsk-A9-Q9c" id="Zn6-DW-7KY"/>
                 <outlet property="publishedAt" destination="Gef-nD-4mB" id="Sgk-lJ-Tb4"/>
+                <outlet property="star1" destination="hXI-dl-g6S" id="lZT-vL-Tra"/>
+                <outlet property="star2" destination="GtA-RC-4gD" id="ewS-Yi-OV2"/>
+                <outlet property="star3" destination="1za-0g-ewv" id="EGq-4L-7pr"/>
+                <outlet property="star4" destination="fLK-Zs-jVu" id="H7l-Ie-BmB"/>
+                <outlet property="star5" destination="RHv-vN-T3A" id="ztn-UK-Ihh"/>
                 <outlet property="userImage" destination="Bp8-pw-Orn" id="bLq-FC-rBo"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="53.236607142857139"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

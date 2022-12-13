@@ -6,7 +6,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var acitivityIndicator: UIActivityIndicatorView!
     
-    var users: Array<User> = []
+    var posts: Array<Post> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +31,9 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         // Firestoreを初期化する
         let db = Firestore.firestore()
         do{
-            let documents = try await db.collection("users").getDocuments()
-            let users = documents.documents.map{ User(doc: $0) }
-            self.users = users
+            let documents = try await db.collection("timeline").getDocuments()
+            let posts = documents.documents.map{ Post(doc: $0) }
+            self.posts = posts
         }catch{
             print("Error")
         }
@@ -45,8 +45,8 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     
     // TableViewの描画に必要（リストの数を返す）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(users.count)
-        return users.count
+        print(posts.count)
+        return posts.count
     }
     
     // TableViewの描画に必要（Cellを指定）
@@ -62,7 +62,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         // セルを取得する
         let cell = tableView.dequeueReusableCell(withIdentifier: "TimelineTableViewCell", for: indexPath) as! TimelineTableViewCell
         
-        cell.setCell(user: users[indexPath.row])
+        cell.setCell(post: posts[indexPath.row])
         
         return cell
         
