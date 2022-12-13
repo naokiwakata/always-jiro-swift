@@ -38,6 +38,8 @@
 		23DB551A2948B1620070CD13 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB55192948B1620070CD13 /* DateExtension.swift */; };
 		23DB551C2948BCBD0070CD13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB551B2948BCBD0070CD13 /* Post.swift */; };
 		23DB55252948D3850070CD13 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DB55242948D3850070CD13 /* Map.storyboard */; };
+		23DB55272948D7DE0070CD13 /* CustomSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB55262948D7DE0070CD13 /* CustomSampleView.swift */; };
+		23DB55292948D7F70070CD13 /* CustomSampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DB55282948D7F70070CD13 /* CustomSampleView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +77,8 @@
 		23DB55192948B1620070CD13 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		23DB551B2948BCBD0070CD13 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		23DB55242948D3850070CD13 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		23DB55262948D7DE0070CD13 /* CustomSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSampleView.swift; sourceTree = "<group>"; };
+		23DB55282948D7F70070CD13 /* CustomSampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSampleView.xib; sourceTree = "<group>"; };
 		567681DA7E559245EEA2F98C /* Pods-AlwaysJiro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysJiro.debug.xcconfig"; path = "Target Support Files/Pods-AlwaysJiro/Pods-AlwaysJiro.debug.xcconfig"; sourceTree = "<group>"; };
 		84B7196081645A8D3B407F7F /* Pods_AlwaysJiro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlwaysJiro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF1E04617566D0921C3C928 /* Pods-AlwaysJiro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysJiro.release.xcconfig"; path = "Target Support Files/Pods-AlwaysJiro/Pods-AlwaysJiro.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				234F97502945ECEA0034CE58 /* Rank.storyboard */,
 				23DB55242948D3850070CD13 /* Map.storyboard */,
 				234F96AE29449D560034CE58 /* LaunchScreen.storyboard */,
+				23DB55262948D7DE0070CD13 /* CustomSampleView.swift */,
+				23DB55282948D7F70070CD13 /* CustomSampleView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 				234F97512945ECEA0034CE58 /* Rank.storyboard in Resources */,
 				234F97B529472BF20034CE58 /* TimelineTableViewCell.xib in Resources */,
 				234F975829460F410034CE58 /* Timeline.storyboard in Resources */,
+				23DB55292948D7F70070CD13 /* CustomSampleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +351,7 @@
 				234F97372945C5D60034CE58 /* TimelineViewController.swift in Sources */,
 				234F96A429449D560034CE58 /* AppDelegate.swift in Sources */,
 				234F96A629449D560034CE58 /* SceneDelegate.swift in Sources */,
+				23DB55272948D7DE0070CD13 /* CustomSampleView.swift in Sources */,
 				23DB551C2948BCBD0070CD13 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
