@@ -31,8 +31,10 @@ class TimelineTableViewCell: UITableViewCell {
     
     func setCell(user: User){
         self.name.text = user.displayName
+        
         let date: Date = user.createdAt.dateValue()
-        self.publishedAt.text = date.description
+        self.publishedAt.text = date.toFormattedString()
+        
         let url = URL(string:  user.photoURL) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")!
         
         Nuke.loadImage(with: url , into: self.userImage)
