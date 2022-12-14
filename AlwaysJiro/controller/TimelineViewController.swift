@@ -53,12 +53,12 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // このようにコンポーネントをXibファイルで作って場合分けが可能っぽい
-        if indexPath.row == 0 {
-            // セルを取得する
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SampleTableViewCell", for: indexPath) as! SampleTableViewCell
-            
-                return cell
-        }
+//        if indexPath.row == 0 {
+//            // セルを取得する
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "SampleTableViewCell", for: indexPath) as! SampleTableViewCell
+//
+//                return cell
+//        }
         // セルを取得する
         let cell = tableView.dequeueReusableCell(withIdentifier: "TimelineTableViewCell", for: indexPath) as! TimelineTableViewCell
         
