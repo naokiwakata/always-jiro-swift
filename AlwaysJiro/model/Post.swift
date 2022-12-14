@@ -3,7 +3,7 @@ import Firebase
 class Post {
     
     let uid: String
-    let adress: String
+    let address: String
     let comment: String
     let hasImage: Bool
     let createdAt: Timestamp
@@ -22,7 +22,7 @@ class Post {
         let dic:[String: Any] = doc.data()!
         
         self.uid = doc.documentID
-        self.adress = dic["adress"] as? String ?? ""
+        self.address = dic["address"] as? String ?? ""
         self.comment = dic["comment"] as? String ?? ""
         self.createdAt = dic["createdAt"] as? Timestamp ?? Timestamp()
         self.imageIDs = dic["imageIDs"] as? Array<String> ?? []

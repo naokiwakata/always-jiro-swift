@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="316" id="KGk-i7-Jjw" customClass="TimelineTableViewCell" customModule="AlwaysJiro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="316"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="316"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdf-ic-atL" customClass="UserTileView" customModule="AlwaysJiro" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="66" id="f2f-W9-Rvj"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rt-Nm-AGQ" customClass="ShopTileView" customModule="AlwaysJiro" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="66" width="414" height="66"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" systemColor="systemGray3Color"/>
+                <constraints>
+                    <constraint firstItem="1rt-Nm-AGQ" firstAttribute="trailing" secondItem="cdf-ic-atL" secondAttribute="trailing" id="2lk-jZ-ywt"/>
+                    <constraint firstAttribute="bottom" secondItem="cdf-ic-atL" secondAttribute="bottom" priority="250" id="GOx-XA-8es"/>
+                    <constraint firstItem="1rt-Nm-AGQ" firstAttribute="leading" secondItem="cdf-ic-atL" secondAttribute="leading" id="Q7k-d0-O83"/>
+                    <constraint firstItem="cdf-ic-atL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="250" id="Zzp-Vz-shN"/>
+                    <constraint firstItem="1rt-Nm-AGQ" firstAttribute="top" secondItem="cdf-ic-atL" secondAttribute="bottom" id="ai6-7z-WwV"/>
+                    <constraint firstAttribute="bottom" secondItem="1rt-Nm-AGQ" secondAttribute="bottom" constant="184" id="bsF-y3-eIq"/>
+                    <constraint firstAttribute="trailing" secondItem="cdf-ic-atL" secondAttribute="trailing" priority="250" id="ec9-K0-YFr"/>
+                    <constraint firstItem="cdf-ic-atL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hb5-8c-k41"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="shopTileView" destination="1rt-Nm-AGQ" id="Hwn-GB-Vy6"/>
+                <outlet property="userTileView" destination="cdf-ic-atL" id="2Qe-tK-SBR"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="131.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
