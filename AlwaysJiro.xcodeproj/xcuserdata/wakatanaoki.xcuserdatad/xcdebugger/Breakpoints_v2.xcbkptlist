@@ -3,4 +3,115 @@
    uuid = "13D54A5F-ACA3-48B5-AB6D-B77FB28CDE60"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B3D79CB-BA36-486A-A84C-561A5A9E9747"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlwaysJiro/controller/TimelineViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4B3D79CB-BA36-486A-A84C-561A5A9E9747 - adb3a33b919da6"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for closure #1 @Sendable () async -&gt; () in AlwaysJiro.TimelineViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AlwaysJiro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wakatanaoki/SwiftProjects/AlwaysJiro/AlwaysJiro/controller/TimelineViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "4B3D79CB-BA36-486A-A84C-561A5A9E9747 - f46c6e93cd1576b8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AlwaysJiro.TimelineViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AlwaysJiro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wakatanaoki/SwiftProjects/AlwaysJiro/AlwaysJiro/controller/TimelineViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "4B3D79CB-BA36-486A-A84C-561A5A9E9747 - 4280d1be4cceb449"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AlwaysJiro.TimelineViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AlwaysJiro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wakatanaoki/SwiftProjects/AlwaysJiro/AlwaysJiro/controller/TimelineViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "4B3D79CB-BA36-486A-A84C-561A5A9E9747 - 1b35306aca87fa5e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AlwaysJiro.TimelineViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AlwaysJiro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wakatanaoki/SwiftProjects/AlwaysJiro/AlwaysJiro/controller/TimelineViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "4B3D79CB-BA36-486A-A84C-561A5A9E9747 - f1a993194879386f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AlwaysJiro.TimelineViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AlwaysJiro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wakatanaoki/SwiftProjects/AlwaysJiro/AlwaysJiro/controller/TimelineViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26318478-5A0D-4870-8D00-E8DB700BB1D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/objc/NSObject.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

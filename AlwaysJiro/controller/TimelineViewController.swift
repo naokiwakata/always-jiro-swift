@@ -10,6 +10,9 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 10000
         // クルクルをストップした時に非表示する
         acitivityIndicator.hidesWhenStopped = true
         // UITableViewに自作したTableViewCellを追加

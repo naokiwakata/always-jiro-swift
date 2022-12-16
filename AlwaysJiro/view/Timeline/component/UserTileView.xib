@@ -26,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5U-BH-1Nx">
-                    <rect key="frame" x="66" y="8" width="35" height="21"/>
+                    <rect key="frame" x="66" y="12" width="35" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -39,23 +39,23 @@
                     </constraints>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aXX-he-vNG">
-                    <rect key="frame" x="66" y="37.5" width="22" height="20"/>
+                    <rect key="frame" x="66" y="33.5" width="22" height="20"/>
                     <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Phu-hx-Lbk">
-                    <rect key="frame" x="90" y="37.5" width="22" height="20"/>
+                    <rect key="frame" x="90" y="33.5" width="22" height="20"/>
                     <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IQ6-N5-hio">
-                    <rect key="frame" x="114" y="37.5" width="22" height="20"/>
+                    <rect key="frame" x="114" y="33.5" width="22" height="20"/>
                     <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n8g-fv-sAZ">
-                    <rect key="frame" x="138" y="37.5" width="22" height="20"/>
+                    <rect key="frame" x="138" y="33.5" width="22" height="20"/>
                     <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Qx4-WW-EB1">
-                    <rect key="frame" x="162" y="37.5" width="22" height="20"/>
+                    <rect key="frame" x="162" y="33.5" width="22" height="20"/>
                     <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿日時" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32X-EH-WdF">
@@ -69,23 +69,22 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="z5U-BH-1Nx" firstAttribute="leading" secondItem="ONP-0w-3sh" secondAttribute="trailing" priority="250" constant="8" id="0Ii-rP-KzH"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Phu-hx-Lbk" secondAttribute="bottom" priority="250" constant="8" id="3X7-SK-0Sv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Phu-hx-Lbk" secondAttribute="bottom" priority="250" constant="12" id="3X7-SK-0Sv"/>
                 <constraint firstAttribute="trailing" secondItem="32X-EH-WdF" secondAttribute="trailing" priority="250" constant="8" id="42i-YM-9eV"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IQ6-N5-hio" secondAttribute="bottom" priority="250" constant="8" id="54i-ie-xUg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IQ6-N5-hio" secondAttribute="bottom" priority="250" constant="12" id="54i-ie-xUg"/>
                 <constraint firstItem="IQ6-N5-hio" firstAttribute="leading" secondItem="Phu-hx-Lbk" secondAttribute="trailing" priority="250" constant="2" id="7Fn-qX-4lX"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="n8g-fv-sAZ" secondAttribute="bottom" priority="250" constant="8" id="9xQ-du-XzU"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aXX-he-vNG" secondAttribute="bottom" priority="250" constant="8" id="H5w-ec-o0u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="n8g-fv-sAZ" secondAttribute="bottom" priority="250" constant="12" id="9xQ-du-XzU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aXX-he-vNG" secondAttribute="bottom" priority="250" constant="12" id="H5w-ec-o0u"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="32X-EH-WdF" secondAttribute="bottom" priority="250" constant="43.5" id="I57-bP-An5"/>
                 <constraint firstItem="32X-EH-WdF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="250" constant="8" id="OGf-cw-G54"/>
-                <constraint firstItem="aXX-he-vNG" firstAttribute="top" secondItem="z5U-BH-1Nx" secondAttribute="bottom" priority="250" constant="9" id="PZV-Fa-EJH"/>
                 <constraint firstItem="Phu-hx-Lbk" firstAttribute="leading" secondItem="aXX-he-vNG" secondAttribute="trailing" priority="250" constant="2" id="RU6-LP-qVN"/>
                 <constraint firstItem="ONP-0w-3sh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" priority="250" constant="8" id="XQJ-nn-Zvf"/>
                 <constraint firstItem="aXX-he-vNG" firstAttribute="leading" secondItem="ONP-0w-3sh" secondAttribute="trailing" priority="250" constant="8" id="ZoQ-2t-aa3"/>
-                <constraint firstItem="z5U-BH-1Nx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="250" constant="8" id="bNX-tL-51J"/>
+                <constraint firstItem="z5U-BH-1Nx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="250" constant="12" id="bNX-tL-51J"/>
                 <constraint firstItem="ONP-0w-3sh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="250" constant="8" id="fP8-By-qgz"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ONP-0w-3sh" secondAttribute="bottom" priority="250" constant="8" id="o8Y-OH-3vV"/>
                 <constraint firstItem="Qx4-WW-EB1" firstAttribute="leading" secondItem="n8g-fv-sAZ" secondAttribute="trailing" priority="250" constant="2" id="wUg-uK-lJq"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Qx4-WW-EB1" secondAttribute="bottom" priority="250" constant="8" id="yVn-0h-J2N"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Qx4-WW-EB1" secondAttribute="bottom" priority="250" constant="12" id="yVn-0h-J2N"/>
                 <constraint firstItem="n8g-fv-sAZ" firstAttribute="leading" secondItem="IQ6-N5-hio" secondAttribute="trailing" priority="250" constant="2" id="zA5-In-7LY"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

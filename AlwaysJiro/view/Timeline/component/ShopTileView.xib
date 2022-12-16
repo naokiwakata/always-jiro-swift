@@ -28,29 +28,29 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="店舗名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5F0-bg-GXT">
-                    <rect key="frame" x="66" y="8" width="43" height="25"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <rect key="frame" x="66" y="12" width="49" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbE-Xd-Kjx">
-                    <rect key="frame" x="66" y="41" width="29" height="17"/>
+                    <rect key="frame" x="66" y="37" width="29" height="17"/>
+                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="PMF-fv-ycr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="990" constant="8" id="FsK-Qa-czm"/>
+                <constraint firstItem="5F0-bg-GXT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="NMb-Zi-azO"/>
                 <constraint firstItem="KbE-Xd-Kjx" firstAttribute="leading" secondItem="PMF-fv-ycr" secondAttribute="trailing" priority="990" constant="8" id="PHL-5J-8W2"/>
-                <constraint firstItem="KbE-Xd-Kjx" firstAttribute="top" secondItem="5F0-bg-GXT" secondAttribute="bottom" priority="990" constant="8" symbolic="YES" id="V0J-75-JwW"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PMF-fv-ycr" secondAttribute="bottom" priority="990" constant="8" id="Xbp-7o-ZnA"/>
-                <constraint firstItem="5F0-bg-GXT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="990" constant="8" id="rTy-3r-DIH"/>
                 <constraint firstItem="5F0-bg-GXT" firstAttribute="leading" secondItem="PMF-fv-ycr" secondAttribute="trailing" priority="990" constant="8" id="yh2-gJ-beZ"/>
                 <constraint firstItem="PMF-fv-ycr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" priority="990" constant="8" id="yrW-4H-s81"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KbE-Xd-Kjx" secondAttribute="bottom" priority="990" constant="8" id="zAc-dJ-CK9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KbE-Xd-Kjx" secondAttribute="bottom" priority="990" constant="12" id="zAc-dJ-CK9"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="137.68115942028987" y="63.616071428571423"/>

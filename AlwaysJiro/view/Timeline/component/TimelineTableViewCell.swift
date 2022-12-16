@@ -12,7 +12,9 @@ class TimelineTableViewCell: UITableViewCell {
     
     @IBOutlet weak var userTileView: UserTileView!
     @IBOutlet weak var shopTileView: ShopTileView!
+    @IBOutlet weak var comment: UILabel!
     
+    var isOdd : Bool = false;
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -39,13 +41,20 @@ class TimelineTableViewCell: UITableViewCell {
         self.userTileView.postedAt.text = date.toFormattedString()
         let userImageUrl = URL(string:  post.userImage) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")
         Nuke.loadImage(with: userImageUrl! , into: self.userTileView.userImage)
-        
+
         // shopTileView
         self.shopTileView.shopName.text = post.shopName
         self.shopTileView.shopAddress.text = post.address
         print(post.address)
         let shopImageUrl = URL(string:  post.shopImage) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")
         Nuke.loadImage(with: shopImageUrl! , into: self.shopTileView.shopImage)
+
+        
+        //self.comment.text = post.comment
+        if isOdd {
+            self.comment.text = "めっちゃ長い文言いきまっせ〜〜〜めっちゃ長い文言いきまっせ〜〜〜めっちゃ長い文言いきまっせ〜〜〜"
+        }
+        isOdd = !isOdd
     }
     
     func setStar(rating:Int){

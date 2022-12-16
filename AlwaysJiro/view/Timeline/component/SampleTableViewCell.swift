@@ -7,6 +7,7 @@
 
 import UIKit
 
+// UITableViewCellのサンプル
 class SampleTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {

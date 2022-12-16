@@ -10,53 +10,84 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="316" id="KGk-i7-Jjw" customClass="TimelineTableViewCell" customModule="AlwaysJiro" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="316"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="333" id="KGk-i7-Jjw" customClass="TimelineTableViewCell" customModule="AlwaysJiro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="316"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdf-ic-atL" customClass="UserTileView" customModule="AlwaysJiro" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-j9-n5q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBF-oE-ONF" customClass="UserTileView" customModule="AlwaysJiro" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRw-c9-1cw" customClass="ShopTileView" customModule="AlwaysJiro" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="66" width="414" height="66"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvc-TF-9la">
+                                <rect key="frame" x="0.0" y="132" width="414" height="94"/>
+                                <string key="text">雪のうえに足跡があった
+足跡を見て　はじめてぼくは
+小動物の　小鳥の　森のけものたちの
+支配する世界を見た
+たとえば一匹のりすである
+その足跡は老いたにれの木からおりて
+小径を横断し
+もみの林のなかに消えている
+瞬時のためらいも　不安も　気のきいた疑問符も　そこにはなかった</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJ8-ww-jQB">
+                                <rect key="frame" x="0.0" y="226" width="414" height="5"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="j0v-5C-Ou5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="66" id="f2f-W9-Rvj"/>
+                            <constraint firstItem="tRw-c9-1cw" firstAttribute="top" secondItem="CEQ-j9-n5q" secondAttribute="top" constant="66" id="NBm-D5-drM"/>
+                            <constraint firstItem="tRw-c9-1cw" firstAttribute="top" secondItem="zBF-oE-ONF" secondAttribute="bottom" id="Zv3-Rf-165"/>
+                            <constraint firstItem="Mvc-TF-9la" firstAttribute="top" secondItem="tRw-c9-1cw" secondAttribute="bottom" id="oEe-F8-11m"/>
                         </constraints>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rt-Nm-AGQ" customClass="ShopTileView" customModule="AlwaysJiro" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="66" width="414" height="66"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
+                    </stackView>
                 </subviews>
-                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <color key="tintColor" systemColor="systemGray3Color"/>
                 <constraints>
-                    <constraint firstItem="1rt-Nm-AGQ" firstAttribute="trailing" secondItem="cdf-ic-atL" secondAttribute="trailing" id="2lk-jZ-ywt"/>
-                    <constraint firstAttribute="bottom" secondItem="cdf-ic-atL" secondAttribute="bottom" priority="250" id="GOx-XA-8es"/>
-                    <constraint firstItem="1rt-Nm-AGQ" firstAttribute="leading" secondItem="cdf-ic-atL" secondAttribute="leading" id="Q7k-d0-O83"/>
-                    <constraint firstItem="cdf-ic-atL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="250" id="Zzp-Vz-shN"/>
-                    <constraint firstItem="1rt-Nm-AGQ" firstAttribute="top" secondItem="cdf-ic-atL" secondAttribute="bottom" id="ai6-7z-WwV"/>
-                    <constraint firstAttribute="bottom" secondItem="1rt-Nm-AGQ" secondAttribute="bottom" constant="184" id="bsF-y3-eIq"/>
-                    <constraint firstAttribute="trailing" secondItem="cdf-ic-atL" secondAttribute="trailing" priority="250" id="ec9-K0-YFr"/>
-                    <constraint firstItem="cdf-ic-atL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hb5-8c-k41"/>
+                    <constraint firstAttribute="bottom" secondItem="CEQ-j9-n5q" secondAttribute="bottom" id="3VC-Kb-Ntx"/>
+                    <constraint firstAttribute="trailing" secondItem="CEQ-j9-n5q" secondAttribute="trailing" id="B51-rs-pgz"/>
+                    <constraint firstItem="CEQ-j9-n5q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RE6-lM-X1c"/>
+                    <constraint firstItem="CEQ-j9-n5q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="c33-bj-SCK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="shopTileView" destination="1rt-Nm-AGQ" id="Hwn-GB-Vy6"/>
-                <outlet property="userTileView" destination="cdf-ic-atL" id="2Qe-tK-SBR"/>
+                <outlet property="comment" destination="Mvc-TF-9la" id="VtJ-Vj-401"/>
+                <outlet property="shopTileView" destination="tRw-c9-1cw" id="Juo-VW-gFg"/>
+                <outlet property="userTileView" destination="zBF-oE-ONF" id="m7e-Ak-GNV"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="131.25"/>
+            <point key="canvasLocation" x="128.98550724637681" y="345.20089285714283"/>
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
