@@ -10,15 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="333" id="KGk-i7-Jjw" customClass="TimelineTableViewCell" customModule="AlwaysJiro" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="484" id="KGk-i7-Jjw" customClass="TimelineTableViewCell" customModule="AlwaysJiro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="382"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="382"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-j9-n5q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="382"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBF-oE-ONF" customClass="UserTileView" customModule="AlwaysJiro" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
@@ -27,24 +27,38 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRw-c9-1cw" customClass="ShopTileView" customModule="AlwaysJiro" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="66" width="414" height="66"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="Gss-F1-8nX"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvc-TF-9la">
-                                <rect key="frame" x="0.0" y="132" width="414" height="98"/>
-                                <string key="text">雪のうえに足跡があった
-足跡を見て　はじめてぼくは
-小動物の　小鳥の　森のけものたちの
-支配する世界を見た
-たとえば一匹のりすである
-その足跡は老いたにれの木からおりて
-小径を横断し
-もみの林のなかに消えている
-瞬時のためらいも　不安も　気のきいた疑問符も　そこにはなかった</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHM-p9-69O" customClass="CustomUILabel" customModule="AlwaysJiro" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="132" width="414" height="249"/>
+                                <mutableString key="text">LabelWhen you enter a theater, you leave the everyday world behind. You take your
+seat, the lights go down, and you are in a different world. By an act of will
+you accept this new world as real for the moment. You accept the (イ)characters
+on the stage or screen as real people and their problems as real problems. As
+you watch the play unfold, you lose yourself. You identify yourself with one
+of the characters. Y</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topPadding">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJ8-ww-jQB">
-                                <rect key="frame" x="0.0" y="230" width="414" height="1"/>
+                                <rect key="frame" x="0.0" y="381" width="414" height="1"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="j0v-5C-Ou5"/>
@@ -54,7 +68,6 @@
                         <constraints>
                             <constraint firstItem="tRw-c9-1cw" firstAttribute="top" secondItem="CEQ-j9-n5q" secondAttribute="top" constant="66" id="NBm-D5-drM"/>
                             <constraint firstItem="tRw-c9-1cw" firstAttribute="top" secondItem="zBF-oE-ONF" secondAttribute="bottom" id="Zv3-Rf-165"/>
-                            <constraint firstItem="Mvc-TF-9la" firstAttribute="top" secondItem="tRw-c9-1cw" secondAttribute="bottom" id="oEe-F8-11m"/>
                         </constraints>
                     </stackView>
                 </subviews>
@@ -69,11 +82,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="comment" destination="Mvc-TF-9la" id="VtJ-Vj-401"/>
+                <outlet property="comment" destination="uHM-p9-69O" id="ifD-8r-Nbm"/>
                 <outlet property="shopTileView" destination="tRw-c9-1cw" id="Juo-VW-gFg"/>
                 <outlet property="userTileView" destination="zBF-oE-ONF" id="m7e-Ak-GNV"/>
             </connections>
-            <point key="canvasLocation" x="128.98550724637681" y="345.20089285714283"/>
+            <point key="canvasLocation" x="128.98550724637681" y="395.75892857142856"/>
         </tableViewCell>
     </objects>
     <resources>

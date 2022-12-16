@@ -44,6 +44,7 @@
 		23DB552D2949AB9C0070CD13 /* UserTileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DB552C2949AB9C0070CD13 /* UserTileView.xib */; };
 		23DB552F2949C8A20070CD13 /* ShopTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB552E2949C8A20070CD13 /* ShopTileView.swift */; };
 		23DB55312949C8B10070CD13 /* ShopTileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DB55302949C8B10070CD13 /* ShopTileView.xib */; };
+		23DB5538294C5A670070CD13 /* CustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB5537294C5A670070CD13 /* CustomUILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +88,7 @@
 		23DB552C2949AB9C0070CD13 /* UserTileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTileView.xib; sourceTree = "<group>"; };
 		23DB552E2949C8A20070CD13 /* ShopTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTileView.swift; sourceTree = "<group>"; };
 		23DB55302949C8B10070CD13 /* ShopTileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTileView.xib; sourceTree = "<group>"; };
+		23DB5537294C5A670070CD13 /* CustomUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUILabel.swift; sourceTree = "<group>"; };
 		567681DA7E559245EEA2F98C /* Pods-AlwaysJiro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysJiro.debug.xcconfig"; path = "Target Support Files/Pods-AlwaysJiro/Pods-AlwaysJiro.debug.xcconfig"; sourceTree = "<group>"; };
 		84B7196081645A8D3B407F7F /* Pods_AlwaysJiro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlwaysJiro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF1E04617566D0921C3C928 /* Pods-AlwaysJiro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysJiro.release.xcconfig"; path = "Target Support Files/Pods-AlwaysJiro/Pods-AlwaysJiro.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		234F973B2945DE330034CE58 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				23DB5536294C5A390070CD13 /* component */,
 				234F97BA294736A30034CE58 /* Timeline */,
 				234F96A929449D560034CE58 /* Main.storyboard */,
 				234F97522945EE8E0034CE58 /* MyPage.storyboard */,
@@ -210,6 +213,14 @@
 				23DB552C2949AB9C0070CD13 /* UserTileView.xib */,
 				23DB552E2949C8A20070CD13 /* ShopTileView.swift */,
 				23DB55302949C8B10070CD13 /* ShopTileView.xib */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		23DB5536294C5A390070CD13 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				23DB5537294C5A670070CD13 /* CustomUILabel.swift */,
 			);
 			path = component;
 			sourceTree = "<group>";
@@ -357,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				234F97B429472BF20034CE58 /* TimelineTableViewCell.swift in Sources */,
+				23DB5538294C5A670070CD13 /* CustomUILabel.swift in Sources */,
 				23DB552B2949AB820070CD13 /* UserTileView.swift in Sources */,
 				234F97B8294732E30034CE58 /* SampleTableViewCell.swift in Sources */,
 				234F97392945CC9C0034CE58 /* MyPageViewController.swift in Sources */,

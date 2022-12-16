@@ -12,7 +12,7 @@ class TimelineTableViewCell: UITableViewCell {
     
     @IBOutlet weak var userTileView: UserTileView!
     @IBOutlet weak var shopTileView: ShopTileView!
-    @IBOutlet weak var comment: UILabel!
+    @IBOutlet weak var comment: CustomUILabel!
     
     var isOdd : Bool = false;
     override func awakeFromNib() {
@@ -51,10 +51,6 @@ class TimelineTableViewCell: UITableViewCell {
 
         
         //self.comment.text = post.comment
-        if isOdd {
-            self.comment.text = "めっちゃ長い文言いきまっせ〜〜〜めっちゃ長い文言いきまっせ〜〜〜めっちゃ長い文言いきまっせ〜〜〜"
-        }
-        isOdd = !isOdd
     }
     
     func setStar(rating:Int){
