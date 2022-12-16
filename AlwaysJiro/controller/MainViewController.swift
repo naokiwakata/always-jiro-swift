@@ -6,15 +6,15 @@
 //
 
 import UIKit
-
-class ViewController: UITabBarController {
-
+class MainViewController: UITabBarController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // タブバーの色変更
         UITabBar.appearance().tintColor = UIColor.orange
+        
     }
-
-
+    
+    
 }
 

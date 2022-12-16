@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="jld-Pg-G2V">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6YT-wZ-voi" customClass="ViewController" customModule="AlwaysJiro" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6YT-wZ-voi" customClass="MainViewController" customModule="AlwaysJiro" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uiu-1E-M5J">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="425" y="-61"/>
         </scene>
-        <!--Demo-->
+        <!--Rank-->
         <scene sceneID="xDY-el-qLA">
             <objects>
-                <viewControllerPlaceholder storyboardName="Demo" id="Pi5-3T-yh5" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Rank" id="Pi5-3T-yh5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="MyPage" image="person" catalog="system" id="Qss-fz-9VS"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n1v-Uq-NRU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
