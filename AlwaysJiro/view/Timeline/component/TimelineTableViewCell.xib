@@ -29,7 +29,7 @@
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvc-TF-9la">
-                                <rect key="frame" x="0.0" y="132" width="414" height="94"/>
+                                <rect key="frame" x="0.0" y="132" width="414" height="98"/>
                                 <string key="text">雪のうえに足跡があった
 足跡を見て　はじめてぼくは
 小動物の　小鳥の　森のけものたちの
@@ -44,10 +44,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJ8-ww-jQB">
-                                <rect key="frame" x="0.0" y="226" width="414" height="5"/>
-                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <rect key="frame" x="0.0" y="230" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="5" id="j0v-5C-Ou5"/>
+                                    <constraint firstAttribute="height" constant="1" id="j0v-5C-Ou5"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -77,9 +77,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
