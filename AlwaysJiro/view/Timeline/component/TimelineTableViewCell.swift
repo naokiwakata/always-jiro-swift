@@ -13,8 +13,11 @@ class TimelineTableViewCell: UITableViewCell {
     @IBOutlet weak var userTileView: UserTileView!
     @IBOutlet weak var shopTileView: ShopTileView!
     @IBOutlet weak var comment: CustomUILabel!
+    @IBOutlet weak var postedImageView1: UIImageView!
+    @IBOutlet weak var postedImageView2: UIImageView!
+    @IBOutlet weak var postedImageView3: UIImageView!
+    @IBOutlet weak var postedImageView4: UIImageView!
     
-    var isOdd : Bool = false;
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -49,8 +52,37 @@ class TimelineTableViewCell: UITableViewCell {
         let shopImageUrl = URL(string:  post.shopImage) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")
         Nuke.loadImage(with: shopImageUrl! , into: self.shopTileView.shopImage)
 
+        // URLが存在するImageViewは表示する
+        // 初めは全てを非表示にしておく
+        self.postedImageView1.isHidden = true
+        self.postedImageView2.isHidden = true
+        self.postedImageView3.isHidden = true
+        self.postedImageView4.isHidden = true
         
+        var index = 0
+        for imageURL in post.imageURLs {
+            let postedImageURL = URL(string:  imageURL) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")
+            let _postedImageTile = postedImageTile(index: index)!
+            // 表示
+            _postedImageTile.isHidden = false
+            Nuke.loadImage(with: postedImageURL! , into: _postedImageTile)
+            index+=1
+        }
         //self.comment.text = post.comment
+    }
+    
+    func postedImageTile(index : Int)-> UIImageView? {
+        if index == 0 {
+            return self.postedImageView1
+        }else if index == 1{
+            return self.postedImageView2
+        }else if index == 2{
+            return self.postedImageView3
+        }else if index == 3{
+            return self.postedImageView4
+        }else{
+            return nil
+        }
     }
     
     func setStar(rating:Int){

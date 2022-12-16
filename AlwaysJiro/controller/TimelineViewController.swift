@@ -67,6 +67,8 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         
         cell.setCell(post: posts[indexPath.row])
         
+        print("\(indexPath.row) / \(posts.count)")
+        
         return cell
         
     }
