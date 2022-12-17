@@ -41,9 +41,11 @@
                                             <constraint firstAttribute="height" constant="200" id="S5y-UC-R1A"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v6M-mY-sif">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v6M-mY-sif">
                                         <rect key="frame" x="209" y="0.0" width="205" height="200"/>
+                                        <gestureRecognizers/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="205" id="0eZ-bo-tdV"/>
                                             <constraint firstAttribute="height" constant="200" id="pcL-7h-LWC"/>
                                         </constraints>
                                     </imageView>

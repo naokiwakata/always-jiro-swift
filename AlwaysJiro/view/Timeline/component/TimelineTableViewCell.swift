@@ -25,12 +25,28 @@ class TimelineTableViewCell: UITableViewCell {
         userTileView.userImage.clipsToBounds = true
         shopTileView.shopImage.layer.cornerRadius = shopTileView.shopImage.frame.size.width * 0.1
         shopTileView.shopImage.clipsToBounds = true
+        // Xibファイルではタップイベントはコードで追加する必要がある
         postedImageView1.isUserInteractionEnabled = true
-        postedImageView1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:))))
+        postedImageView1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onImage1Tap(_:))))
+        postedImageView2.isUserInteractionEnabled = true
+        postedImageView2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onImage2Tap(_:))))
+        postedImageView3.isUserInteractionEnabled = true
+        postedImageView3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onImage3Tap(_:))))
+        postedImageView4.isUserInteractionEnabled = true
+        postedImageView4.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onImage4Tap(_:))))
     }
     
-    @objc func imageViewTapped(_ sender: UITapGestureRecognizer) {
-        print("タップ")
+    @objc func onImage1Tap(_ sender: UITapGestureRecognizer) {
+        print("タップ1")
+    }
+    @objc func onImage2Tap(_ sender: UITapGestureRecognizer) {
+        print("タップ2")
+    }
+    @objc func onImage3Tap(_ sender: UITapGestureRecognizer) {
+        print("タップ3")
+    }
+    @objc func onImage4Tap(_ sender: UITapGestureRecognizer) {
+        print("タップ4")
     }
     
     func setCell(post: Post){
