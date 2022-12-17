@@ -55,15 +55,8 @@
                                     <constraint firstAttribute="height" constant="2" id="oLY-RV-crH"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F81-GY-GTJ">
-                                <rect key="frame" x="0.0" y="334" width="414" height="4"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="4" id="KrC-Ax-cS9"/>
-                                </constraints>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lob-5n-koT">
-                                <rect key="frame" x="0.0" y="338" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="334" width="414" height="200"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="twW-Yl-3H1">
                                         <rect key="frame" x="0.0" y="0.0" width="205" height="200"/>
@@ -80,13 +73,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHM-p9-69O" customClass="CustomUILabel" customModule="AlwaysJiro" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="538" width="414" height="186"/>
-                                <mutableString key="text">LabelWhen you enter a theater, you leave the everyday world behind. You take your
+                                <rect key="frame" x="0.0" y="534" width="414" height="190"/>
+                                <string key="text">LabelWhen you enter a theater, you leave the everyday world behind. You take your
 seat, the lights go down, and you are in a different world. By an act of will
 you accept this new world as real for the moment. You accept the (イ)characters
 on the stage or screen as real people and their problems as real problems. As
 you watch the play unfold, you lose yourself. You identify yourself with one
-of the characters. Y</mutableString>
+of the characters. Y</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
