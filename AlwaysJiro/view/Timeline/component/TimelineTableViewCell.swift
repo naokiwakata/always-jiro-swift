@@ -1,10 +1,3 @@
-//
-//  TimelineTableViewCell.swift
-//  AlwaysJiro
-//
-//  Created by 若田直希 on 2022/12/12.
-//
-
 import UIKit
 import Nuke
 
@@ -26,14 +19,18 @@ class TimelineTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-        
+  
         // 角丸にする
         userTileView.userImage.layer.cornerRadius = userTileView.userImage.frame.size.width * 0.5
         userTileView.userImage.clipsToBounds = true
         shopTileView.shopImage.layer.cornerRadius = shopTileView.shopImage.frame.size.width * 0.1
         shopTileView.shopImage.clipsToBounds = true
+        postedImageView1.isUserInteractionEnabled = true
+        postedImageView1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:))))
+    }
+    
+    @objc func imageViewTapped(_ sender: UITapGestureRecognizer) {
+        print("タップ")
     }
     
     func setCell(post: Post){
@@ -108,4 +105,5 @@ class TimelineTableViewCell: UITableViewCell {
             userTileView.star1.tintColor = UIColor.systemYellow
         }
     }
+    
 }
