@@ -78,13 +78,13 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         let storyboard = UIStoryboard(name: storyboard, bundle: nil)
         let nextVc = storyboard.instantiateViewController(withIdentifier: nextViewController)
         DispatchQueue.main.async {
-            //next.modalPresentationStyle = .fullScreen
             switch navigateType {
             case .push:
                 nextVc.hidesBottomBarWhenPushed = true // タブバー非表示
                 baseVC.navigationController?.pushViewController(nextVc, animated: true)
             case .modal:
-                nextVc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+                nextVc.modalPresentationStyle = .fullScreen
+                nextVc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve //　ふわっと遷移(https://superhahnah.com/swift-modal-transition-style/)
                 baseVC.present(nextVc,animated: true)
             }
         }
