@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPO-pH-ShV">
-                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eps-VF-qph">
                                 <rect key="frame" x="20" y="54" width="30" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -35,16 +29,11 @@
                         <viewLayoutGuide key="safeArea" id="flf-MT-J8O"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="KPO-pH-ShV" firstAttribute="centerY" secondItem="vO3-Zs-2wC" secondAttribute="centerY" id="KaS-Zv-M6X"/>
                             <constraint firstItem="eps-VF-qph" firstAttribute="leading" secondItem="flf-MT-J8O" secondAttribute="leading" constant="20" id="d8S-Yj-jki"/>
                             <constraint firstItem="eps-VF-qph" firstAttribute="top" secondItem="flf-MT-J8O" secondAttribute="top" constant="10" id="efK-Fi-lVv"/>
-                            <constraint firstItem="KPO-pH-ShV" firstAttribute="centerX" secondItem="vO3-Zs-2wC" secondAttribute="centerX" id="rWQ-LN-fUm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2Sk-vM-xLf"/>
-                    <connections>
-                        <outlet property="label" destination="KPO-pH-ShV" id="3kB-52-6Da"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgF-1c-R4S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
