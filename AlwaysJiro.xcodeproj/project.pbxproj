@@ -37,6 +37,9 @@
 		2377668C2950318D00B19351 /* PhotoView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2377668B2950318D00B19351 /* PhotoView.storyboard */; };
 		2377668F2950328200B19351 /* NavigateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377668E2950328200B19351 /* NavigateType.swift */; };
 		237766912950338900B19351 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237766902950338900B19351 /* PhotoViewController.swift */; };
+		23A1F3C32950A838008098C6 /* ayaka2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 23A1F3C02950A838008098C6 /* ayaka2.jpeg */; };
+		23A1F3C42950A838008098C6 /* ayaka1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 23A1F3C12950A838008098C6 /* ayaka1.jpeg */; };
+		23A1F3C52950A838008098C6 /* ayaka3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 23A1F3C22950A838008098C6 /* ayaka3.jpeg */; };
 		23DB5512294745A70070CD13 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 23DB5511294745A70070CD13 /* Nuke */; };
 		23DB551A2948B1620070CD13 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB55192948B1620070CD13 /* DateExtension.swift */; };
 		23DB551C2948BCBD0070CD13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB551B2948BCBD0070CD13 /* Post.swift */; };
@@ -85,6 +88,9 @@
 		2377668B2950318D00B19351 /* PhotoView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoView.storyboard; sourceTree = "<group>"; };
 		2377668E2950328200B19351 /* NavigateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateType.swift; sourceTree = "<group>"; };
 		237766902950338900B19351 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		23A1F3C02950A838008098C6 /* ayaka2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ayaka2.jpeg; sourceTree = "<group>"; };
+		23A1F3C12950A838008098C6 /* ayaka1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ayaka1.jpeg; sourceTree = "<group>"; };
+		23A1F3C22950A838008098C6 /* ayaka3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ayaka3.jpeg; sourceTree = "<group>"; };
 		23DB5516294746F50070CD13 /* AlwaysJiro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysJiro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DB55192948B1620070CD13 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		23DB551B2948BCBD0070CD13 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -144,6 +150,9 @@
 				234F96A329449D560034CE58 /* AppDelegate.swift */,
 				234F96A529449D560034CE58 /* SceneDelegate.swift */,
 				234F96AC29449D560034CE58 /* Assets.xcassets */,
+				23A1F3C12950A838008098C6 /* ayaka1.jpeg */,
+				23A1F3C02950A838008098C6 /* ayaka2.jpeg */,
+				23A1F3C22950A838008098C6 /* ayaka3.jpeg */,
 				234F96B129449D560034CE58 /* Info.plist */,
 				234F97962946184A0034CE58 /* GoogleService-Info.plist */,
 			);
@@ -351,13 +360,16 @@
 				234F96B029449D560034CE58 /* LaunchScreen.storyboard in Resources */,
 				234F97B9294732E30034CE58 /* SampleTableViewCell.xib in Resources */,
 				234F97972946184A0034CE58 /* GoogleService-Info.plist in Resources */,
+				23A1F3C32950A838008098C6 /* ayaka2.jpeg in Resources */,
 				234F97542945EE8E0034CE58 /* MyPage.storyboard in Resources */,
 				234F96AD29449D560034CE58 /* Assets.xcassets in Resources */,
+				23A1F3C42950A838008098C6 /* ayaka1.jpeg in Resources */,
 				234F96AB29449D560034CE58 /* Main.storyboard in Resources */,
 				23DB55252948D3850070CD13 /* Map.storyboard in Resources */,
 				234F97512945ECEA0034CE58 /* Rank.storyboard in Resources */,
 				234F97B529472BF20034CE58 /* TimelineTableViewCell.xib in Resources */,
 				23DB552D2949AB9C0070CD13 /* UserTileView.xib in Resources */,
+				23A1F3C52950A838008098C6 /* ayaka3.jpeg in Resources */,
 				234F975829460F410034CE58 /* Timeline.storyboard in Resources */,
 				23DB55312949C8B10070CD13 /* ShopTileView.xib in Resources */,
 				23DB55292948D7F70070CD13 /* CustomSampleView.xib in Resources */,
