@@ -36,6 +36,7 @@
 		234F97B9294732E30034CE58 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234F97B7294732E30034CE58 /* SampleTableViewCell.xib */; };
 		2377668C2950318D00B19351 /* PhotoView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2377668B2950318D00B19351 /* PhotoView.storyboard */; };
 		2377668F2950328200B19351 /* NavigateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377668E2950328200B19351 /* NavigateType.swift */; };
+		237766912950338900B19351 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237766902950338900B19351 /* PhotoViewController.swift */; };
 		23DB5512294745A70070CD13 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 23DB5511294745A70070CD13 /* Nuke */; };
 		23DB551A2948B1620070CD13 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB55192948B1620070CD13 /* DateExtension.swift */; };
 		23DB551C2948BCBD0070CD13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB551B2948BCBD0070CD13 /* Post.swift */; };
@@ -83,6 +84,7 @@
 		234F97B7294732E30034CE58 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
 		2377668B2950318D00B19351 /* PhotoView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoView.storyboard; sourceTree = "<group>"; };
 		2377668E2950328200B19351 /* NavigateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateType.swift; sourceTree = "<group>"; };
+		237766902950338900B19351 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		23DB5516294746F50070CD13 /* AlwaysJiro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysJiro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DB55192948B1620070CD13 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		23DB551B2948BCBD0070CD13 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				234F97362945C5D60034CE58 /* TimelineViewController.swift */,
 				234F97382945CC9C0034CE58 /* MyPageViewController.swift */,
 				234F96A729449D560034CE58 /* MainViewController.swift */,
+				237766902950338900B19351 /* PhotoViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				234F97B129461E930034CE58 /* User.swift in Sources */,
 				23DB553F29502A870070CD13 /* navigate.swift in Sources */,
 				234F97372945C5D60034CE58 /* TimelineViewController.swift in Sources */,
+				237766912950338900B19351 /* PhotoViewController.swift in Sources */,
 				234F96A429449D560034CE58 /* AppDelegate.swift in Sources */,
 				234F96A629449D560034CE58 /* SceneDelegate.swift in Sources */,
 				23DB55272948D7DE0070CD13 /* CustomSampleView.swift in Sources */,

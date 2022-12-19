@@ -81,8 +81,10 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
             //next.modalPresentationStyle = .fullScreen
             switch navigateType {
             case .push:
+                nextVc.hidesBottomBarWhenPushed = true // タブバー非表示
                 baseVC.navigationController?.pushViewController(nextVc, animated: true)
             case .modal:
+                nextVc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
                 baseVC.present(nextVc,animated: true)
             }
         }
