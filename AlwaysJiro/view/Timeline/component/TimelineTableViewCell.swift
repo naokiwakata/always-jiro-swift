@@ -10,6 +10,7 @@ class TimelineTableViewCell: UITableViewCell {
     @IBOutlet weak var postedImageView2: UIImageView!
     @IBOutlet weak var postedImageView3: UIImageView!
     @IBOutlet weak var postedImageView4: UIImageView!
+    var post:Post?
     
     var delegate:NavigateProtocol?
     override func awakeFromNib() {
@@ -38,11 +39,11 @@ class TimelineTableViewCell: UITableViewCell {
     }
     
     @objc func onImage1Tap(_ sender: UITapGestureRecognizer) {
-        delegate?.navigate(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.push)
+        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.push,post: post!)
         print("タップ1")
     }
     @objc func onImage2Tap(_ sender: UITapGestureRecognizer) {
-        delegate?.navigate(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.modal)
+        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.modal,post: post!)
         print("タップ2")
     }
     @objc func onImage3Tap(_ sender: UITapGestureRecognizer) {
@@ -53,6 +54,7 @@ class TimelineTableViewCell: UITableViewCell {
     }
     
     func setCell(post: Post){
+        self.post = post
         // userTileView
         setStar(rating: post.rating)
         self.userTileView.userName.text = post.userName

@@ -10,6 +10,8 @@ import UIKit
 class PhotoViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+    
+    var imageURLs:Array<String> = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +21,7 @@ class PhotoViewController: UIViewController {
     }
     
     @IBAction func onTap(_ sender: Any) {
+        print(imageURLs)
         self.dismiss(animated: true)
     }
 }

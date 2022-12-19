@@ -73,10 +73,13 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         
     }
     
-    func navigate(storyboard:String,nextViewController:String,navigateType:NavigateType) {
+    func navigateToPhotoView(storyboard:String,nextViewController:String,navigateType:NavigateType,post:Post) {
         let baseVC = self
         let storyboard = UIStoryboard(name: storyboard, bundle: nil)
-        let nextVc = storyboard.instantiateViewController(withIdentifier: nextViewController)
+        let nextVc = storyboard.instantiateViewController(withIdentifier: nextViewController) as! PhotoViewController
+        // imageURLsをPhotoViewに渡す
+        nextVc.imageURLs = post.imageURLs
+        
         DispatchQueue.main.async {
             switch navigateType {
             case .push:
