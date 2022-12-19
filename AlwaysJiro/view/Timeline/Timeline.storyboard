@@ -28,6 +28,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5fc-Kz-wfA" kind="show" identifier="ToPhotoView" id="ImK-R8-WXk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -56,34 +59,21 @@
             </objects>
             <point key="canvasLocation" x="1534.7826086956522" y="-196.20535714285714"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="T2F-N6-qjb">
+        <!--View Controller-->
+        <scene sceneID="YQf-sa-M0y">
             <objects>
-                <tableViewController id="PPD-eQ-3sr" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Eip-U8-HRF">
+                <viewController storyboardIdentifier="PhotoView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5fc-Kz-wfA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WC4-TM-6Br">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="meU-hy-QMw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="U5n-Xr-a8u">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U5n-Xr-a8u" id="RYI-FK-feL">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="PPD-eQ-3sr" id="fKH-n3-l2D"/>
-                            <outlet property="delegate" destination="PPD-eQ-3sr" id="XMs-Xe-oU5"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="YDh-7K-a5k"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pHC-b5-jeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ne8-Jf-WlM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Imr-a1-bXz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2213" y="-196"/>
+            <point key="canvasLocation" x="2267" y="-196"/>
         </scene>
         <!--メイン-->
         <scene sceneID="nrE-nm-yvr">

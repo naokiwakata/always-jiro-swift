@@ -11,6 +11,7 @@ class TimelineTableViewCell: UITableViewCell {
     @IBOutlet weak var postedImageView3: UIImageView!
     @IBOutlet weak var postedImageView4: UIImageView!
     
+    var delegate:NavigateProtocol?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,7 +20,7 @@ class TimelineTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-  
+        
         // 角丸にする
         userTileView.userImage.layer.cornerRadius = userTileView.userImage.frame.size.width * 0.5
         userTileView.userImage.clipsToBounds = true
@@ -37,6 +38,7 @@ class TimelineTableViewCell: UITableViewCell {
     }
     
     @objc func onImage1Tap(_ sender: UITapGestureRecognizer) {
+        delegate?.navigate(storyboard: "Timeline",nextViewController: "PhotoView")
         print("タップ1")
     }
     @objc func onImage2Tap(_ sender: UITapGestureRecognizer) {
@@ -57,14 +59,14 @@ class TimelineTableViewCell: UITableViewCell {
         self.userTileView.postedAt.text = date.toFormattedString()
         let userImageUrl = URL(string:  post.userImage) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")
         Nuke.loadImage(with: userImageUrl! , into: self.userTileView.userImage)
-
+        
         // shopTileView
         self.shopTileView.shopName.text = post.shopName
         self.shopTileView.shopAddress.text = post.address
         print(post.address)
         let shopImageUrl = URL(string:  post.shopImage) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")
         Nuke.loadImage(with: shopImageUrl! , into: self.shopTileView.shopImage)
-
+        
         // URLが存在するImageViewは表示する
         // 初めは全てを非表示にしておく
         self.postedImageView1.isHidden = true

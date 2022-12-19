@@ -1,7 +1,7 @@
 import UIKit
 import Firebase
 
-class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,NavigateProtocol {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var acitivityIndicator: UIActivityIndicatorView!
@@ -56,20 +56,32 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // このようにコンポーネントをXibファイルで作って場合分けが可能っぽい
-//        if indexPath.row == 0 {
-//            // セルを取得する
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "SampleTableViewCell", for: indexPath) as! SampleTableViewCell
-//
-//                return cell
-//        }
+        //        if indexPath.row == 0 {
+        //            // セルを取得する
+        //            let cell = tableView.dequeueReusableCell(withIdentifier: "SampleTableViewCell", for: indexPath) as! SampleTableViewCell
+        //
+        //                return cell
+        //        }
         // セルを取得する
         let cell = tableView.dequeueReusableCell(withIdentifier: "TimelineTableViewCell", for: indexPath) as! TimelineTableViewCell
-        
+        cell.delegate = self
         cell.setCell(post: posts[indexPath.row])
         
         print("\(indexPath.row) / \(posts.count)")
         
         return cell
+        
+    }
+    
+    func navigate(storyboard:String,nextViewController:String) {
+        let baseVC = self
+        let storyboard = UIStoryboard(name: storyboard, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: nextViewController)
+        let next = vc
+        DispatchQueue.main.async {
+            //next.modalPresentationStyle = .fullScreen
+            baseVC.present(next,animated: true)
+        }
         
     }
     

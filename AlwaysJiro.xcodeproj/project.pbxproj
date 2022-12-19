@@ -45,6 +45,7 @@
 		23DB552F2949C8A20070CD13 /* ShopTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB552E2949C8A20070CD13 /* ShopTileView.swift */; };
 		23DB55312949C8B10070CD13 /* ShopTileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DB55302949C8B10070CD13 /* ShopTileView.xib */; };
 		23DB5538294C5A670070CD13 /* CustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB5537294C5A670070CD13 /* CustomUILabel.swift */; };
+		23DB553F29502A870070CD13 /* navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB553E29502A870070CD13 /* navigate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +90,7 @@
 		23DB552E2949C8A20070CD13 /* ShopTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTileView.swift; sourceTree = "<group>"; };
 		23DB55302949C8B10070CD13 /* ShopTileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTileView.xib; sourceTree = "<group>"; };
 		23DB5537294C5A670070CD13 /* CustomUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUILabel.swift; sourceTree = "<group>"; };
+		23DB553E29502A870070CD13 /* navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigate.swift; sourceTree = "<group>"; };
 		567681DA7E559245EEA2F98C /* Pods-AlwaysJiro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysJiro.debug.xcconfig"; path = "Target Support Files/Pods-AlwaysJiro/Pods-AlwaysJiro.debug.xcconfig"; sourceTree = "<group>"; };
 		84B7196081645A8D3B407F7F /* Pods_AlwaysJiro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlwaysJiro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF1E04617566D0921C3C928 /* Pods-AlwaysJiro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysJiro.release.xcconfig"; path = "Target Support Files/Pods-AlwaysJiro/Pods-AlwaysJiro.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		23DB55172948B1060070CD13 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				23DB553D29502A680070CD13 /* protocol */,
 				23DB55182948B1100070CD13 /* extension */,
 			);
 			path = util;
@@ -223,6 +226,14 @@
 				23DB5537294C5A670070CD13 /* CustomUILabel.swift */,
 			);
 			path = component;
+			sourceTree = "<group>";
+		};
+		23DB553D29502A680070CD13 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				23DB553E29502A870070CD13 /* navigate.swift */,
+			);
+			path = protocol;
 			sourceTree = "<group>";
 		};
 		49CC27C94865B799B6AB5C04 /* Pods */ = {
@@ -375,6 +386,7 @@
 				234F96A829449D560034CE58 /* MainViewController.swift in Sources */,
 				23DB551A2948B1620070CD13 /* DateExtension.swift in Sources */,
 				234F97B129461E930034CE58 /* User.swift in Sources */,
+				23DB553F29502A870070CD13 /* navigate.swift in Sources */,
 				234F97372945C5D60034CE58 /* TimelineViewController.swift in Sources */,
 				234F96A429449D560034CE58 /* AppDelegate.swift in Sources */,
 				234F96A629449D560034CE58 /* SceneDelegate.swift in Sources */,
