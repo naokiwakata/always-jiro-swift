@@ -76,11 +76,11 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     func navigate(storyboard:String,nextViewController:String) {
         let baseVC = self
         let storyboard = UIStoryboard(name: storyboard, bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: nextViewController)
-        let next = vc
+        let nextVc = storyboard.instantiateViewController(withIdentifier: nextViewController)
         DispatchQueue.main.async {
             //next.modalPresentationStyle = .fullScreen
-            baseVC.present(next,animated: true)
+            // baseVC.present(next,animated: true)
+            baseVC.navigationController?.pushViewController(nextVc, animated: true)
         }
         
     }
