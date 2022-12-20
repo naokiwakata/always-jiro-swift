@@ -7,12 +7,12 @@ class PhotoViewController: UIViewController {
     private var pageControl: UIPageControl!
     
     var imageURLs:Array<String> = []
-    
+    var closeButtonHeight : CGFloat = 100
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // scrollViewの画面表示サイズを指定
-        scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 800))
+        scrollView = UIScrollView(frame: CGRect(x: 0, y: closeButtonHeight, width: self.view.frame.size.width, height: 800))
         // scrollViewのサイズを指定（幅は1メニューに表示するViewの幅×ページ数）
         scrollView.contentSize = CGSize(width: self.view.frame.size.width*4, height: 800)
         // scrollViewのデリゲートになる
@@ -46,7 +46,7 @@ class PhotoViewController: UIViewController {
     
     func createImageView(imageURL: String,index:Int) -> UIImageView {
         let imageView = UIImageView()
-        let centerRect = CGRect(center: CGPoint(x: self.view.frame.size.width*CGFloat(index)+self.view.frame.size.width/2,y:self.view.frame.size.height/2), size: CGSize(width: self.view.frame.size.width, height: 500))
+        let centerRect = CGRect(center: CGPoint(x: self.view.frame.size.width*CGFloat(index)+self.view.frame.size.width/2,y:self.view.frame.size.height/2-closeButtonHeight), size: CGSize(width: self.view.frame.size.width, height: 500))
         imageView.frame = centerRect
         imageView.contentMode = .scaleAspectFit
         let url = URL(string:  imageURL) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")
