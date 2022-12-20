@@ -1,7 +1,7 @@
 import UIKit
 import Firebase
 
-class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,NavigateProtocol {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var acitivityIndicator: UIActivityIndicatorView!
@@ -56,20 +56,42 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // このようにコンポーネントをXibファイルで作って場合分けが可能っぽい
-//        if indexPath.row == 0 {
-//            // セルを取得する
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "SampleTableViewCell", for: indexPath) as! SampleTableViewCell
-//
-//                return cell
-//        }
+        //        if indexPath.row == 0 {
+        //            // セルを取得する
+        //            let cell = tableView.dequeueReusableCell(withIdentifier: "SampleTableViewCell", for: indexPath) as! SampleTableViewCell
+        //
+        //                return cell
+        //        }
         // セルを取得する
         let cell = tableView.dequeueReusableCell(withIdentifier: "TimelineTableViewCell", for: indexPath) as! TimelineTableViewCell
-        
+        cell.delegate = self
         cell.setCell(post: posts[indexPath.row])
         
         print("\(indexPath.row) / \(posts.count)")
         
         return cell
+        
+    }
+    
+    func navigateToPhotoView(storyboard:String,nextViewController:String,navigateType:NavigateType,post:Post,imageIndex:Int) {
+        let baseVC = self
+        let storyboard = UIStoryboard(name: storyboard, bundle: nil)
+        let nextVc = storyboard.instantiateViewController(withIdentifier: nextViewController) as! PhotoViewController
+        // imageURLsをPhotoViewに渡す
+        nextVc.imageURLs = post.imageURLs
+        nextVc.currentPage = imageIndex
+        
+        DispatchQueue.main.async {
+            switch navigateType {
+            case .push:
+                nextVc.hidesBottomBarWhenPushed = true // タブバー非表示
+                baseVC.navigationController?.pushViewController(nextVc, animated: true)
+            case .modal:
+                nextVc.modalPresentationStyle = .fullScreen
+                nextVc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve //　ふわっと遷移(https://superhahnah.com/swift-modal-transition-style/)
+                baseVC.present(nextVc,animated: true)
+            }
+        }
         
     }
     

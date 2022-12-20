@@ -34,6 +34,13 @@
 		234F97B529472BF20034CE58 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234F97B329472BF20034CE58 /* TimelineTableViewCell.xib */; };
 		234F97B8294732E30034CE58 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F97B6294732E30034CE58 /* SampleTableViewCell.swift */; };
 		234F97B9294732E30034CE58 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234F97B7294732E30034CE58 /* SampleTableViewCell.xib */; };
+		2377668C2950318D00B19351 /* PhotoView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2377668B2950318D00B19351 /* PhotoView.storyboard */; };
+		2377668F2950328200B19351 /* NavigateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377668E2950328200B19351 /* NavigateType.swift */; };
+		237766912950338900B19351 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237766902950338900B19351 /* PhotoViewController.swift */; };
+		23A1F3C32950A838008098C6 /* ayaka2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 23A1F3C02950A838008098C6 /* ayaka2.jpeg */; };
+		23A1F3C42950A838008098C6 /* ayaka1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 23A1F3C12950A838008098C6 /* ayaka1.jpeg */; };
+		23A1F3C52950A838008098C6 /* ayaka3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 23A1F3C22950A838008098C6 /* ayaka3.jpeg */; };
+		23A1F3C72951925D008098C6 /* CGrectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A1F3C62951925D008098C6 /* CGrectExtension.swift */; };
 		23DB5512294745A70070CD13 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 23DB5511294745A70070CD13 /* Nuke */; };
 		23DB551A2948B1620070CD13 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB55192948B1620070CD13 /* DateExtension.swift */; };
 		23DB551C2948BCBD0070CD13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB551B2948BCBD0070CD13 /* Post.swift */; };
@@ -45,6 +52,7 @@
 		23DB552F2949C8A20070CD13 /* ShopTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB552E2949C8A20070CD13 /* ShopTileView.swift */; };
 		23DB55312949C8B10070CD13 /* ShopTileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DB55302949C8B10070CD13 /* ShopTileView.xib */; };
 		23DB5538294C5A670070CD13 /* CustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB5537294C5A670070CD13 /* CustomUILabel.swift */; };
+		23DB553F29502A870070CD13 /* navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB553E29502A870070CD13 /* navigate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +86,13 @@
 		234F97B329472BF20034CE58 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		234F97B6294732E30034CE58 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
 		234F97B7294732E30034CE58 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
+		2377668B2950318D00B19351 /* PhotoView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoView.storyboard; sourceTree = "<group>"; };
+		2377668E2950328200B19351 /* NavigateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateType.swift; sourceTree = "<group>"; };
+		237766902950338900B19351 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		23A1F3C02950A838008098C6 /* ayaka2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ayaka2.jpeg; sourceTree = "<group>"; };
+		23A1F3C12950A838008098C6 /* ayaka1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ayaka1.jpeg; sourceTree = "<group>"; };
+		23A1F3C22950A838008098C6 /* ayaka3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ayaka3.jpeg; sourceTree = "<group>"; };
+		23A1F3C62951925D008098C6 /* CGrectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGrectExtension.swift; sourceTree = "<group>"; };
 		23DB5516294746F50070CD13 /* AlwaysJiro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysJiro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DB55192948B1620070CD13 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		23DB551B2948BCBD0070CD13 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -89,6 +104,7 @@
 		23DB552E2949C8A20070CD13 /* ShopTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTileView.swift; sourceTree = "<group>"; };
 		23DB55302949C8B10070CD13 /* ShopTileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTileView.xib; sourceTree = "<group>"; };
 		23DB5537294C5A670070CD13 /* CustomUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUILabel.swift; sourceTree = "<group>"; };
+		23DB553E29502A870070CD13 /* navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigate.swift; sourceTree = "<group>"; };
 		567681DA7E559245EEA2F98C /* Pods-AlwaysJiro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysJiro.debug.xcconfig"; path = "Target Support Files/Pods-AlwaysJiro/Pods-AlwaysJiro.debug.xcconfig"; sourceTree = "<group>"; };
 		84B7196081645A8D3B407F7F /* Pods_AlwaysJiro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlwaysJiro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF1E04617566D0921C3C928 /* Pods-AlwaysJiro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlwaysJiro.release.xcconfig"; path = "Target Support Files/Pods-AlwaysJiro/Pods-AlwaysJiro.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +152,9 @@
 				234F96A329449D560034CE58 /* AppDelegate.swift */,
 				234F96A529449D560034CE58 /* SceneDelegate.swift */,
 				234F96AC29449D560034CE58 /* Assets.xcassets */,
+				23A1F3C12950A838008098C6 /* ayaka1.jpeg */,
+				23A1F3C02950A838008098C6 /* ayaka2.jpeg */,
+				23A1F3C22950A838008098C6 /* ayaka3.jpeg */,
 				234F96B129449D560034CE58 /* Info.plist */,
 				234F97962946184A0034CE58 /* GoogleService-Info.plist */,
 			);
@@ -173,6 +192,7 @@
 				234F97362945C5D60034CE58 /* TimelineViewController.swift */,
 				234F97382945CC9C0034CE58 /* MyPageViewController.swift */,
 				234F96A729449D560034CE58 /* MainViewController.swift */,
+				237766902950338900B19351 /* PhotoViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -182,13 +202,24 @@
 			children = (
 				23DB551D2948C4270070CD13 /* component */,
 				234F975729460F410034CE58 /* Timeline.storyboard */,
+				2377668B2950318D00B19351 /* PhotoView.storyboard */,
 			);
 			path = Timeline;
+			sourceTree = "<group>";
+		};
+		2377668D2950325B00B19351 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				2377668E2950328200B19351 /* NavigateType.swift */,
+			);
+			path = enum;
 			sourceTree = "<group>";
 		};
 		23DB55172948B1060070CD13 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				2377668D2950325B00B19351 /* enum */,
+				23DB553D29502A680070CD13 /* protocol */,
 				23DB55182948B1100070CD13 /* extension */,
 			);
 			path = util;
@@ -198,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				23DB55192948B1620070CD13 /* DateExtension.swift */,
+				23A1F3C62951925D008098C6 /* CGrectExtension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -223,6 +255,14 @@
 				23DB5537294C5A670070CD13 /* CustomUILabel.swift */,
 			);
 			path = component;
+			sourceTree = "<group>";
+		};
+		23DB553D29502A680070CD13 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				23DB553E29502A870070CD13 /* navigate.swift */,
+			);
+			path = protocol;
 			sourceTree = "<group>";
 		};
 		49CC27C94865B799B6AB5C04 /* Pods */ = {
@@ -319,16 +359,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2377668C2950318D00B19351 /* PhotoView.storyboard in Resources */,
 				234F96B029449D560034CE58 /* LaunchScreen.storyboard in Resources */,
 				234F97B9294732E30034CE58 /* SampleTableViewCell.xib in Resources */,
 				234F97972946184A0034CE58 /* GoogleService-Info.plist in Resources */,
+				23A1F3C32950A838008098C6 /* ayaka2.jpeg in Resources */,
 				234F97542945EE8E0034CE58 /* MyPage.storyboard in Resources */,
 				234F96AD29449D560034CE58 /* Assets.xcassets in Resources */,
+				23A1F3C42950A838008098C6 /* ayaka1.jpeg in Resources */,
 				234F96AB29449D560034CE58 /* Main.storyboard in Resources */,
 				23DB55252948D3850070CD13 /* Map.storyboard in Resources */,
 				234F97512945ECEA0034CE58 /* Rank.storyboard in Resources */,
 				234F97B529472BF20034CE58 /* TimelineTableViewCell.xib in Resources */,
 				23DB552D2949AB9C0070CD13 /* UserTileView.xib in Resources */,
+				23A1F3C52950A838008098C6 /* ayaka3.jpeg in Resources */,
 				234F975829460F410034CE58 /* Timeline.storyboard in Resources */,
 				23DB55312949C8B10070CD13 /* ShopTileView.xib in Resources */,
 				23DB55292948D7F70070CD13 /* CustomSampleView.xib in Resources */,
@@ -375,11 +419,15 @@
 				234F96A829449D560034CE58 /* MainViewController.swift in Sources */,
 				23DB551A2948B1620070CD13 /* DateExtension.swift in Sources */,
 				234F97B129461E930034CE58 /* User.swift in Sources */,
+				23DB553F29502A870070CD13 /* navigate.swift in Sources */,
 				234F97372945C5D60034CE58 /* TimelineViewController.swift in Sources */,
+				237766912950338900B19351 /* PhotoViewController.swift in Sources */,
 				234F96A429449D560034CE58 /* AppDelegate.swift in Sources */,
 				234F96A629449D560034CE58 /* SceneDelegate.swift in Sources */,
+				23A1F3C72951925D008098C6 /* CGrectExtension.swift in Sources */,
 				23DB55272948D7DE0070CD13 /* CustomSampleView.swift in Sources */,
 				23DB552F2949C8A20070CD13 /* ShopTileView.swift in Sources */,
+				2377668F2950328200B19351 /* NavigateType.swift in Sources */,
 				23DB551C2948BCBD0070CD13 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

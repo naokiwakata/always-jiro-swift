@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LQe-Mc-EwQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo View Controller-->
+        <scene sceneID="MwF-aN-SbM">
+            <objects>
+                <viewController storyboardIdentifier="PhotoView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LQe-Mc-EwQ" customClass="PhotoViewController" customModule="AlwaysJiro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vO3-Zs-2wC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eps-VF-qph">
+                                <rect key="frame" x="20" y="54" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="×"/>
+                                <connections>
+                                    <action selector="onTap:" destination="LQe-Mc-EwQ" eventType="touchUpInside" id="CzS-Rf-piC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="flf-MT-J8O"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="eps-VF-qph" firstAttribute="leading" secondItem="flf-MT-J8O" secondAttribute="leading" constant="20" id="d8S-Yj-jki"/>
+                            <constraint firstItem="eps-VF-qph" firstAttribute="top" secondItem="flf-MT-J8O" secondAttribute="top" constant="10" id="efK-Fi-lVv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Sk-vM-xLf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgF-1c-R4S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2267" y="-196"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

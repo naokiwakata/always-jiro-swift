@@ -1,10 +1,3 @@
-//
-//  TimelineTableViewCell.swift
-//  AlwaysJiro
-//
-//  Created by 若田直希 on 2022/12/12.
-//
-
 import UIKit
 import Nuke
 
@@ -17,7 +10,9 @@ class TimelineTableViewCell: UITableViewCell {
     @IBOutlet weak var postedImageView2: UIImageView!
     @IBOutlet weak var postedImageView3: UIImageView!
     @IBOutlet weak var postedImageView4: UIImageView!
+    var post:Post?
     
+    var delegate:NavigateProtocol?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,16 +22,37 @@ class TimelineTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        // Configure the view for the selected state
-        
         // 角丸にする
         userTileView.userImage.layer.cornerRadius = userTileView.userImage.frame.size.width * 0.5
         userTileView.userImage.clipsToBounds = true
         shopTileView.shopImage.layer.cornerRadius = shopTileView.shopImage.frame.size.width * 0.1
         shopTileView.shopImage.clipsToBounds = true
+        // Xibファイルではタップイベントはコードで追加する必要がある
+        postedImageView1.isUserInteractionEnabled = true
+        postedImageView1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onImage1Tap(_:))))
+        postedImageView2.isUserInteractionEnabled = true
+        postedImageView2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onImage2Tap(_:))))
+        postedImageView3.isUserInteractionEnabled = true
+        postedImageView3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onImage3Tap(_:))))
+        postedImageView4.isUserInteractionEnabled = true
+        postedImageView4.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onImage4Tap(_:))))
+    }
+    
+    @objc func onImage1Tap(_ sender: UITapGestureRecognizer) {
+        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.modal,post: post!,imageIndex: 1)
+    }
+    @objc func onImage2Tap(_ sender: UITapGestureRecognizer) {
+        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.modal,post: post!,imageIndex: 2)
+    }
+    @objc func onImage3Tap(_ sender: UITapGestureRecognizer) {
+        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.modal,post: post!,imageIndex: 3)
+    }
+    @objc func onImage4Tap(_ sender: UITapGestureRecognizer) {
+        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.modal,post: post!,imageIndex: 4)
     }
     
     func setCell(post: Post){
+        self.post = post
         // userTileView
         setStar(rating: post.rating)
         self.userTileView.userName.text = post.userName
@@ -44,14 +60,14 @@ class TimelineTableViewCell: UITableViewCell {
         self.userTileView.postedAt.text = date.toFormattedString()
         let userImageUrl = URL(string:  post.userImage) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")
         Nuke.loadImage(with: userImageUrl! , into: self.userTileView.userImage)
-
+        
         // shopTileView
         self.shopTileView.shopName.text = post.shopName
         self.shopTileView.shopAddress.text = post.address
         print(post.address)
         let shopImageUrl = URL(string:  post.shopImage) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")
         Nuke.loadImage(with: shopImageUrl! , into: self.shopTileView.shopImage)
-
+        
         // URLが存在するImageViewは表示する
         // 初めは全てを非表示にしておく
         self.postedImageView1.isHidden = true
@@ -108,4 +124,5 @@ class TimelineTableViewCell: UITableViewCell {
             userTileView.star1.tintColor = UIColor.systemYellow
         }
     }
+    
 }
