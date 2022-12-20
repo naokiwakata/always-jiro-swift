@@ -10,11 +10,11 @@ class PhotoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         // scrollViewの画面表示サイズを指定
-        scrollView = UIScrollView(frame: CGRect(x: 0, y: 300, width: self.view.frame.size.width, height: 500))
+        scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 800))
         // scrollViewのサイズを指定（幅は1メニューに表示するViewの幅×ページ数）
-        scrollView.contentSize = CGSize(width: self.view.frame.size.width*4, height: 500)
+        scrollView.contentSize = CGSize(width: self.view.frame.size.width*4, height: 800)
         // scrollViewのデリゲートになる
         scrollView.delegate = self
         // メニュー単位のスクロールを可能にする
@@ -25,7 +25,7 @@ class PhotoViewController: UIViewController {
         
         var i:Int = 0
         for imageURL in imageURLs {
-            let imageView = createImageView(x: self.view.frame.size.width*CGFloat(i), y: 0, width: self.view.frame.size.width, height: 500, imageURL: imageURL)
+            let imageView = createImageView(imageURL: imageURL,index: i)
             scrollView.addSubview(imageView)
             i+=1
         }
@@ -44,8 +44,11 @@ class PhotoViewController: UIViewController {
         self.dismiss(animated: true)
     }
     
-    func createImageView(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat, imageURL: String) -> UIImageView {
-        let imageView = UIImageView(frame: CGRect(x: x, y: y, width: width, height: height))
+    func createImageView(imageURL: String,index:Int) -> UIImageView {
+        let imageView = UIImageView()
+        let centerRect = CGRect(center: CGPoint(x: self.view.frame.size.width*CGFloat(index)+self.view.frame.size.width/2,y:self.view.frame.size.height/2), size: CGSize(width: self.view.frame.size.width, height: 500))
+        imageView.frame = centerRect
+        imageView.contentMode = .scaleAspectFit
         let url = URL(string:  imageURL) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")
         Nuke.loadImage(with: url! , into: imageView)
         return imageView
