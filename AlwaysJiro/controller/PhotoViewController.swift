@@ -34,9 +34,9 @@ class PhotoViewController: UIViewController {
         // pageControlのページ数を設定
         pageControl.numberOfPages = imageURLs.count
         // pageControlのドットの色
-        pageControl.pageIndicatorTintColor = UIColor.lightGray
+        pageControl.pageIndicatorTintColor = UIColor.white
         // pageControlの現在のページのドットの色
-        pageControl.currentPageIndicatorTintColor = UIColor.black
+        pageControl.currentPageIndicatorTintColor = UIColor.orange
         self.view.addSubview(pageControl)
     }
     
