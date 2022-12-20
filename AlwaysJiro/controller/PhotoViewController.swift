@@ -1,4 +1,5 @@
 import UIKit
+import Nuke
 
 class PhotoViewController: UIViewController {
     
@@ -9,14 +10,11 @@ class PhotoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        
-        
+    
         // scrollViewの画面表示サイズを指定
         scrollView = UIScrollView(frame: CGRect(x: 0, y: 300, width: self.view.frame.size.width, height: 500))
         // scrollViewのサイズを指定（幅は1メニューに表示するViewの幅×ページ数）
-        scrollView.contentSize = CGSize(width: self.view.frame.size.width*3, height: 500)
+        scrollView.contentSize = CGSize(width: self.view.frame.size.width*4, height: 500)
         // scrollViewのデリゲートになる
         scrollView.delegate = self
         // メニュー単位のスクロールを可能にする
@@ -25,20 +23,16 @@ class PhotoViewController: UIViewController {
         scrollView.showsHorizontalScrollIndicator = false
         self.view.addSubview(scrollView)
         
-        // scrollView上にUIImageViewをページ分追加する(今回は3ページ分)
-        let imageView1 = createImageView(x: 0, y: 0, width: self.view.frame.size.width, height: 500, image: "ayaka1.jpeg")
-        scrollView.addSubview(imageView1)
-        
-        let imageView2 = createImageView(x: self.view.frame.size.width, y: 0, width: self.view.frame.size.width, height: 500, image: "ayaka2.jpeg")
-        scrollView.addSubview(imageView2)
-        
-        let imageView3 = createImageView(x: self.view.frame.size.width*2, y: 0, width: self.view.frame.size.width, height: 500, image: "ayaka3.jpeg")
-        scrollView.addSubview(imageView3)
-        
+        var i:Int = 0
+        for imageURL in imageURLs {
+            let imageView = createImageView(x: self.view.frame.size.width*CGFloat(i), y: 0, width: self.view.frame.size.width, height: 500, imageURL: imageURL)
+            scrollView.addSubview(imageView)
+            i+=1
+        }
         // pageControlの表示位置とサイズの設定
         pageControl = UIPageControl(frame: CGRect(x: 0, y: 670, width: self.view.frame.size.width, height: 30))
         // pageControlのページ数を設定
-        pageControl.numberOfPages = 3
+        pageControl.numberOfPages = imageURLs.count
         // pageControlのドットの色
         pageControl.pageIndicatorTintColor = UIColor.lightGray
         // pageControlの現在のページのドットの色
@@ -47,15 +41,13 @@ class PhotoViewController: UIViewController {
     }
     
     @IBAction func onTap(_ sender: Any) {
-        print(imageURLs)
         self.dismiss(animated: true)
     }
     
-    // UIImageViewを生成
-    func createImageView(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat, image: String) -> UIImageView {
+    func createImageView(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat, imageURL: String) -> UIImageView {
         let imageView = UIImageView(frame: CGRect(x: x, y: y, width: width, height: height))
-        let image = UIImage(named:  image)
-        imageView.image = image
+        let url = URL(string:  imageURL) ?? URL(string: "https://ogre.natalie.mu/artist/100506/20220303/konnoayaka_art202203.jpg?imwidth=640&imdensity=1")
+        Nuke.loadImage(with: url! , into: imageView)
         return imageView
     }
 }
