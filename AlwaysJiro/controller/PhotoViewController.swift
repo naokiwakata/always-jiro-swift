@@ -7,6 +7,7 @@ class PhotoViewController: UIViewController {
     private var pageControl: UIPageControl!
     
     var imageURLs:Array<String> = []
+    var currentPage:Int = 0
     var closeButtonHeight : CGFloat = 100
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,12 @@ class PhotoViewController: UIViewController {
         pageControl.pageIndicatorTintColor = UIColor.white
         // pageControlの現在のページのドットの色
         pageControl.currentPageIndicatorTintColor = UIColor.orange
+        
+        pageControl.currentPage = currentPage-1
         self.view.addSubview(pageControl)
+        
+        // 現在のページまで飛ぶ
+        scrollView.contentOffset = CGPoint.init(x: self.view.frame.size.width * CGFloat(currentPage-1), y: 0)
     }
     
     @IBAction func onTap(_ sender: Any) {

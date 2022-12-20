@@ -39,18 +39,16 @@ class TimelineTableViewCell: UITableViewCell {
     }
     
     @objc func onImage1Tap(_ sender: UITapGestureRecognizer) {
-        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.push,post: post!)
-        print("タップ1")
+        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.modal,post: post!,imageIndex: 1)
     }
     @objc func onImage2Tap(_ sender: UITapGestureRecognizer) {
-        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.modal,post: post!)
-        print("タップ2")
+        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.modal,post: post!,imageIndex: 2)
     }
     @objc func onImage3Tap(_ sender: UITapGestureRecognizer) {
-        print("タップ3")
+        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.modal,post: post!,imageIndex: 3)
     }
     @objc func onImage4Tap(_ sender: UITapGestureRecognizer) {
-        print("タップ4")
+        delegate?.navigateToPhotoView(storyboard: "Timeline",nextViewController: "PhotoView",navigateType: NavigateType.modal,post: post!,imageIndex: 4)
     }
     
     func setCell(post: Post){
